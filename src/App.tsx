@@ -6,6 +6,7 @@ import { ShipIllustrationSVG } from './components/CharacterPortraits';
 import { seas, Island } from './data/seas';
 import { characters, Character } from './data/characters';
 import { ships, Ship } from './data/ships';
+import ExtremeHero from './components/ExtremeHero';
 
 type Tab = 'home' | 'world' | 'characters' | 'ships';
 
