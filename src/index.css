@@ -332,6 +332,102 @@
   animation: shipFloat 4s ease-in-out infinite;
 }
 
+/* ========== Homepage Animations ========== */
+
+/* Floating skull emoji */
+@keyframes heroFloat {
+  0%, 100% { transform: translateY(0) rotate(-3deg); }
+  50% { transform: translateY(-16px) rotate(3deg); }
+}
+.hero-float {
+  animation: heroFloat 4.5s ease-in-out infinite;
+  display: inline-block;
+}
+
+/* Pulsing glow behind the skull */
+@keyframes skullGlow {
+  0%, 100% { filter: drop-shadow(0 0 25px rgba(245, 158, 11, 0.45)); transform: scale(1); }
+  50% { filter: drop-shadow(0 0 55px rgba(245, 158, 11, 0.8)); transform: scale(1.05); }
+}
+.skull-glow {
+  animation: skullGlow 3s ease-in-out infinite;
+  display: inline-block;
+}
+
+/* Animated gradient for the ONE PIECE title */
+@keyframes titleGradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+.title-gradient {
+  background-size: 250% auto;
+  animation: titleGradientShift 6s ease infinite;
+}
+
+/* Slow counter-rotation for decorative rings */
+@keyframes slowSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes slowSpinReverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+.slow-spin { animation: slowSpin 28s linear infinite; }
+.slow-spin-reverse { animation: slowSpinReverse 35s linear infinite; }
+
+/* Drifting background blobs */
+@keyframes driftBlob {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(40px, -30px) scale(1.1); }
+  66% { transform: translate(-30px, 25px) scale(0.95); }
+}
+.drift-blob { animation: driftBlob 14s ease-in-out infinite; }
+
+/* Shimmering sweep across hero badge / buttons */
+@keyframes shimmerSweep {
+  0% { transform: translateX(-150%) skewX(-20deg); }
+  100% { transform: translateX(250%) skewX(-20deg); }
+}
+.shimmer-sweep {
+  animation: shimmerSweep 3.5s ease-in-out infinite;
+}
+
+/* Gentle bob for scroll indicator chevron */
+@keyframes scrollBob {
+  0%, 100% { transform: translateY(0); opacity: 0.4; }
+  50% { transform: translateY(8px); opacity: 1; }
+}
+.scroll-bob { animation: scrollBob 1.8s ease-in-out infinite; }
+
+/* Floating particles rising upward */
+@keyframes riseParticle {
+  0% { transform: translateY(0) translateX(0) scale(1); opacity: 0; }
+  10% { opacity: 0.9; }
+  90% { opacity: 0.5; }
+  100% { transform: translateY(-120px) translateX(var(--drift, 0px)) scale(0.4); opacity: 0; }
+}
+.rise-particle {
+  animation: riseParticle var(--dur, 6s) ease-in infinite;
+  animation-delay: var(--delay, 0s);
+}
+
+/* Parallax-style Ken Burns zoom for the hero feature image */
+@keyframes kenBurns {
+  0% { transform: scale(1) translate(0, 0); }
+  50% { transform: scale(1.12) translate(-1.5%, -1%); }
+  100% { transform: scale(1) translate(0, 0); }
+}
+.ken-burns { animation: kenBurns 20s ease-in-out infinite; }
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .hero-float, .skull-glow, .title-gradient, .slow-spin, .slow-spin-reverse,
+  .drift-blob, .shimmer-sweep, .scroll-bob, .rise-particle, .ken-burns {
+    animation: none !important;
+  }
+}
+
 /* Water wave at bottom of ship image */
 @keyframes waterWave {
   0% { background-position-x: 0; }
