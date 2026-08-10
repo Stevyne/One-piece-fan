@@ -64,7 +64,7 @@ function CharacterCard({ character, isSelected, onClick }: { character: Characte
       )}
       <div className="relative flex items-start gap-3">
         <div
-          className={`w-10 h-10 rounded-full flex items-center justify-center text-xl flex-shrink-0 overflow-hidden ${isSelected ? 'character-breathe' : ''}`}
+          className={`w-10 h-10 rounded-full flex items-center justify-center text-xl shrink-0 overflow-hidden ${isSelected ? 'character-breathe' : ''}`}
           style={{
             backgroundColor: character.color + '33',
             border: `2px solid ${character.color}`,
@@ -111,7 +111,7 @@ function ShipCard({ ship, isSelected, onClick }: { ship: Ship; isSelected: boole
       <div className="flex items-center gap-3">
         {ship.image ? (
           <div
-            className="w-10 h-10 rounded-lg overflow-hidden flex-shrink-0"
+            className="w-10 h-10 rounded-lg overflow-hidden shrink-0"
             style={{ border: `2px solid ${ship.color}` }}
           >
             <img src={ship.image} alt={ship.name} className="w-full h-full object-cover" />
@@ -169,7 +169,7 @@ function HomePage({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
     <div className="h-full overflow-y-auto relative">
       <section className="relative min-h-[calc(100vh-64px)] flex items-center justify-center px-4 py-12 overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(245,158,11,0.22),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(14,165,233,0.22),transparent_35%)]" />
-        <div className="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-[#0a0a2e] to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-44 bg-linear-to-t from-[#0a0a2e] to-transparent" />
         <div className="absolute -top-24 -left-24 w-72 h-72 bg-amber-400/10 rounded-full blur-3xl animate-pulse" />
         <div className="absolute -bottom-20 -right-16 w-80 h-80 bg-cyan-400/10 rounded-full blur-3xl animate-pulse" />
 
@@ -181,10 +181,10 @@ function HomePage({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
 
             <div>
               <div className="text-7xl sm:text-8xl mb-3 drop-shadow-[0_0_25px_rgba(245,158,11,0.45)]">☠️</div>
-              <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black leading-none bg-gradient-to-r from-amber-300 via-red-400 to-amber-300 bg-clip-text text-transparent">
+              <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black leading-none bg-linear-to-r from-amber-300 via-red-400 to-amber-300 bg-clip-text text-transparent">
                 ONE PIECE
               </h1>
-              <p className="mt-3 text-xl sm:text-3xl font-black tracking-[0.28em] text-cyan-200">
+              <p className="mt-3 text-xl sm:text-3xl font-black tracking-[0.28em] text-cyan-200 subtitle-shimmer">
                 ⚓ WORLD ATLAS ⚓
               </p>
             </div>
@@ -226,10 +226,10 @@ function HomePage({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
           </div>
 
           <div className="relative hidden lg:block">
-            <div className="absolute inset-0 bg-gradient-to-br from-amber-400/30 to-cyan-400/20 rounded-[2rem] blur-2xl" />
-            <div className="relative rounded-[2rem] overflow-hidden border border-white/15 bg-black/30 shadow-2xl">
+            <div className="absolute inset-0 bg-linear-to-br from-amber-400/30 to-cyan-400/20 rounded-4xl blur-2xl" />
+            <div className="relative rounded-4xl overflow-hidden border border-white/15 bg-black/30 shadow-2xl">
               <img src="/images/luffy.jpg" alt="Monkey D. Luffy" className="h-[560px] w-full object-cover object-top opacity-80" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a2e] via-transparent to-black/20" />
+              <div className="absolute inset-0 bg-linear-to-t from-[#0a0a2e] via-transparent to-black/20" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <p className="text-amber-300 text-sm font-bold uppercase tracking-[0.25em]">Personnage vedette</p>
                 <h2 className="text-3xl font-black">Monkey D. Luffy</h2>
@@ -256,7 +256,7 @@ function HomePage({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
               <button
                 key={card.title}
                 onClick={() => onNavigate(card.tab)}
-                className={`group text-left rounded-2xl p-6 bg-gradient-to-br ${card.color} border ${card.border} hover:-translate-y-1 hover:shadow-2xl transition-all cursor-pointer overflow-hidden relative`}
+                className={`group text-left rounded-2xl p-6 bg-linear-to-br ${card.color} border ${card.border} hover:-translate-y-1 hover:shadow-2xl transition-all cursor-pointer overflow-hidden relative`}
               >
                 <div className="absolute -right-10 -top-10 text-9xl opacity-10 group-hover:scale-110 transition-transform">{card.emoji}</div>
                 <div className="relative">
@@ -300,7 +300,7 @@ function HomePage({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
 
 function LoadingFallback() {
   return (
-    <div className="w-full h-full flex items-center justify-center bg-gradient-to-b from-[#0a0a2e] to-[#1a0a2e]">
+    <div className="w-full h-full flex items-center justify-center bg-linear-to-b from-[#0a0a2e] to-[#1a0a2e]">
       <div className="text-center">
         <div className="text-6xl mb-4 animate-bounce">☠️</div>
         <p className="text-amber-400 text-xl font-bold">Loading the Grand Line...</p>
@@ -343,7 +343,7 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#0a0a2e] via-[#0f1535] to-[#1a0a2e] text-white overflow-hidden">
+    <div className="min-h-screen bg-linear-to-b from-[#0a0a2e] via-[#0f1535] to-[#1a0a2e] text-white overflow-hidden">
       {/* Header */}
       <header className="relative z-50 bg-black/40 backdrop-blur-xl border-b border-amber-400/20">
         <div className="max-w-7xl mx-auto px-4 py-3">
@@ -351,7 +351,7 @@ export default function App() {
             <div className="flex items-center gap-3">
               <span className="text-3xl">☠️</span>
               <div>
-                <h1 className="text-xl font-black bg-gradient-to-r from-amber-400 via-red-400 to-amber-400 bg-clip-text text-transparent">
+                <h1 className="text-xl font-black bg-linear-to-r from-amber-400 via-red-400 to-amber-400 bg-clip-text text-transparent">
                   ONE PIECE UNIVERSE
                 </h1>
                 <p className="text-[10px] text-white/40 tracking-widest uppercase">Grand Line Explorer 3D</p>
@@ -560,7 +560,7 @@ export default function App() {
                         <span className="text-white font-bold text-lg">{selectedCharacter.devilFruit.name}</span>
                         <DevilFruitBadge type={selectedCharacter.devilFruit.type} />
                         {selectedCharacter.devilFruit.awakening && (
-                          <span className="bg-gradient-to-r from-amber-500 to-red-500 text-white text-xs px-2 py-0.5 rounded-full font-bold animate-pulse">
+                          <span className="bg-linear-to-r from-amber-500 to-red-500 text-white text-xs px-2 py-0.5 rounded-full font-bold animate-pulse">
                             AWAKENED
                           </span>
                         )}
@@ -591,7 +591,7 @@ export default function App() {
                         <div
                           key={h.name}
                           className={`rounded-lg p-3 text-center border ${
-                            h.active ? (h.advanced ? 'border-amber-400/50 bg-amber-400/10' : 'border-white/20 bg-white/5') : 'border-white/5 bg-white/[0.02] opacity-40'
+                            h.active ? (h.advanced ? 'border-amber-400/50 bg-amber-400/10' : 'border-white/20 bg-white/5') : 'border-white/5 bg-white/2 opacity-40'
                           }`}
                         >
                           <div className="text-2xl">{h.icon}</div>
@@ -689,7 +689,7 @@ export default function App() {
                         <div className="absolute bottom-0 left-0 right-0 p-6">
                           <div className="flex items-end gap-4">
                             <div
-                              className="w-16 h-16 rounded-xl flex items-center justify-center text-4xl border-2 flex-shrink-0 ship-float"
+                              className="w-16 h-16 rounded-xl flex items-center justify-center text-4xl border-2 shrink-0 ship-float"
                               style={{
                                 backgroundColor: selectedShip.color + '33',
                                 borderColor: selectedShip.color,
@@ -723,7 +723,7 @@ export default function App() {
                         <div className="absolute bottom-0 left-0 right-0 p-6">
                           <div className="flex items-end gap-4">
                             <div
-                              className="w-16 h-16 rounded-xl flex items-center justify-center text-4xl border-2 flex-shrink-0 ship-float"
+                              className="w-16 h-16 rounded-xl flex items-center justify-center text-4xl border-2 shrink-0 ship-float"
                               style={{
                                 backgroundColor: selectedShip.color + '33',
                                 borderColor: selectedShip.color,
@@ -762,7 +762,7 @@ export default function App() {
                   </div>
 
                   {/* Special Feature */}
-                  <div className="bg-gradient-to-r from-cyan-400/10 to-blue-400/10 rounded-xl p-5 border border-cyan-400/20 space-y-2">
+                  <div className="bg-linear-to-r from-cyan-400/10 to-blue-400/10 rounded-xl p-5 border border-cyan-400/20 space-y-2">
                     <h2 className="text-lg font-bold text-cyan-400">✨ Special Feature</h2>
                     <p className="text-white/70 text-sm">{selectedShip.specialFeature}</p>
                   </div>
