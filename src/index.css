@@ -416,3 +416,31 @@
   .hero-ripple { animation: none !important; }
 }
 /* ========== End Patch ========== */
+
+/* ========== Extreme Level CSS add-ons ========== */
+
+@keyframes letterDrop {
+  0% { opacity: 0; transform: translateY(-80px) rotateX(50deg) rotateY(-20deg); filter: blur(10px); }
+  50% { opacity: 0.9; transform: translateY(10px) rotateX(-10deg) rotateY(10deg); filter: blur(1px); }
+  100% { opacity: 1; transform: translateY(0) rotateX(0) rotateY(0); filter: blur(0); }
+}
+.animate-letter-drop {
+  animation: letterDrop 1s cubic-bezier(0.22, 1, 0.36, 1) both;
+  display: inline-block;
+  transform-origin: bottom center;
+}
+
+/* Magnetic card 3D preserve */
+.preserve-3d { transform-style: preserve-3d; }
+
+/* Glitch text already exists from previous patch */
+/* Ripple / shimmer already exists */
+
+/* Enhanced hero gradient for extreme darkness */
+.bg-gradient-extreme {
+  background: linear-gradient(180deg, #02020a 0%, #0c0c2e 40%, #0a0a2e 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-letter-drop { animation: none !important; opacity: 1; transform: none; }
+}
