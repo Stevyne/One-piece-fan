@@ -309,7 +309,7 @@ function HomePage({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
   ];
 
   return (
-    <div className="h-full overflow-y-auto relative scroll-smooth">
+    <><div className="h-full overflow-y-auto relative scroll-smooth">
       {/* ===================== HERO ===================== */}
       <section className="relative min-h-[calc(100vh-64px)] flex items-center justify-center px-4 py-16 overflow-hidden">
         {/* Animated background */}
@@ -334,7 +334,7 @@ function HomePage({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
               <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black leading-none bg-linear-to-r from-amber-300 via-red-400 to-amber-300 bg-clip-text text-transparent">
                 ONE PIECE
               </h1>
-              <p className="mt-3 text-xl sm:text-3xl font-black tracking-[0.28em] text-cyan-200 subtitle-shimmer">
+              <p className="mt-3 text-xl sm:text-3xl font-black tracking-[0.28em] text-cyan-200 subtitle-shimmer"></p>
               <div className="text-7xl sm:text-8xl mb-3 leading-none">
                 <span className="skull-glow inline-block">
                   <span className="hero-float inline-block">☠️</span>
@@ -395,20 +395,19 @@ function HomePage({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
             <blockquote className="max-w-2xl mx-auto text-white/65 italic border-l-4 border-amber-400/50 pl-4 text-left">
               « Je ne veux pas conquérir le monde. Je veux juste trouver le One Piece et devenir le Roi des Pirates ! »
             </blockquote>
-          </div>
 
-          <div className="relative hidden lg:block">
-            <div className="absolute inset-0 bg-linear-to-br from-amber-400/30 to-cyan-400/20 rounded-4xl blur-2xl" />
-            <div className="relative rounded-4xl overflow-hidden border border-white/15 bg-black/30 shadow-2xl">
-              <img src="/images/luffy.jpg" alt="Monkey D. Luffy" className="h-[560px] w-full object-cover object-top opacity-80" />
-              <div className="absolute inset-0 bg-linear-to-t from-[#0a0a2e] via-transparent to-black/20" />
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <p className="text-amber-300 text-sm font-bold uppercase tracking-[0.25em]">Personnage vedette</p>
-                <h2 className="text-3xl font-black">Monkey D. Luffy</h2>
-                <p className="text-white/60 text-sm mt-1">Gear 5 • Fruit Nika • Haki des Rois avancé</p>
+            <div className="relative hidden lg:block">
+              <div className="absolute inset-0 bg-linear-to-br from-amber-400/30 to-cyan-400/20 rounded-4xl blur-2xl" />
+              <div className="relative rounded-4xl overflow-hidden border border-white/15 bg-black/30 shadow-2xl">
+                <img src="/images/luffy.jpg" alt="Monkey D. Luffy" className="h-[560px] w-full object-cover object-top opacity-80" />
+                <div className="absolute inset-0 bg-linear-to-t from-[#0a0a2e] via-transparent to-black/20" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <p className="text-amber-300 text-sm font-bold uppercase tracking-[0.25em]">Personnage vedette</p>
+                  <h2 className="text-3xl font-black">Monkey D. Luffy</h2>
+                  <p className="text-white/60 text-sm mt-1">Gear 5 • Fruit Nika • Haki des Rois avancé</p>
+                </div>
               </div>
             </div>
-          </div>
           </Reveal>
         </div>
 
@@ -422,103 +421,92 @@ function HomePage({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
         </a>
       </section>
 
-      {/* ===================== EXPLORE CARDS ===================== */}
-      <section id="explore" className="relative px-4 pb-16">
-        <div className="max-w-6xl mx-auto">
-          <Reveal>
-            <div className="text-center mb-10">
-              <p className="text-amber-400/70 text-xs font-bold tracking-[0.3em] uppercase mb-2">L'Atlas</p>
-              <h2 className="text-3xl sm:text-5xl font-black bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent">
-                Explorez l'Univers One Piece
-              </h2>
-              <div className="mx-auto mt-4 h-1 w-24 rounded-full bg-gradient-to-r from-amber-400 via-red-400 to-cyan-400" />
-            </div>
-          </Reveal>
+    </div>
+    <div className="h-full overflow-y-auto relative">
+        <ExtremeHero onNavigate={(tab: string) => onNavigate(tab as Tab)} />
 
-          <div className="grid md:grid-cols-3 gap-5">
-            {highlights.map(card => (
-              <button
-                key={card.title}
-                onClick={() => onNavigate(card.tab)}
-                className={`group text-left rounded-2xl p-6 bg-linear-to-br ${card.color} border ${card.border} hover:-translate-y-1 hover:shadow-2xl transition-all cursor-pointer overflow-hidden relative`}
-              >
-                <div className="absolute -right-10 -top-10 text-9xl opacity-10 group-hover:scale-110 transition-transform">{card.emoji}</div>
-                <div className="relative">
-                  <div className="text-5xl mb-4">{card.emoji}</div>
-                  <p className="text-xs uppercase tracking-widest text-white/45 font-bold">{card.stat}</p>
-                  <h3 className="text-2xl font-black text-white mt-1">{card.title}</h3>
-                  <p className="text-white/60 text-sm leading-relaxed mt-3">{card.description}</p>
-                  <p className="mt-5 text-amber-300 font-bold group-hover:translate-x-1 transition-transform inline-block">Explorer →</p>
-                </div>
-              </button>
-            {highlights.map((card, i) => (
-              <Reveal key={card.title} delay={i * 140}>
-                <button
-                  onClick={() => onNavigate(card.tab)}
-                  className={`group relative text-left w-full h-full rounded-2xl p-7 bg-gradient-to-br ${card.color} border ${card.border} ${card.hoverBorder} hover:-translate-y-2 hover:shadow-2xl ${card.glow} transition-all duration-300 cursor-pointer overflow-hidden`}
-                >
-                  <div className="absolute -right-10 -top-10 text-[10rem] opacity-10 group-hover:scale-125 group-hover:rotate-6 transition-transform duration-500">
-                    {card.emoji}
-                  </div>
-                  <div className="relative">
-                    <div className="text-5xl mb-4 group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-300 inline-block">
+
+        {/* ===================== EXPLORE CARDS ===================== */}
+        <section id="explore" className="relative px-4 pb-16">
+          <div className="max-w-6xl mx-auto">
+            <Reveal>
+              <div className="text-center mb-10">
+                <p className="text-amber-400/70 text-xs font-bold tracking-[0.3em] uppercase mb-2">L'Atlas</p>
+                <h2 className="text-3xl sm:text-5xl font-black bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent">
+                  Explorez l'Univers One Piece
+                </h2>
+                <div className="mx-auto mt-4 h-1 w-24 rounded-full bg-gradient-to-r from-amber-400 via-red-400 to-cyan-400" />
+              </div>
+            </Reveal>
+
+            <div className="grid md:grid-cols-3 gap-5">
+              {highlights.map((card, i) => (
+                <Reveal key={card.title} delay={i * 140}>
+                  <button
+                    onClick={() => onNavigate(card.tab)}
+                    className={`group relative text-left w-full h-full rounded-2xl p-7 bg-gradient-to-br ${card.color} border ${card.border} ${card.hoverBorder} hover:-translate-y-2 hover:shadow-2xl ${card.glow} transition-all duration-300 cursor-pointer overflow-hidden`}
+                  >
+                    <div className="absolute -right-10 -top-10 text-[10rem] opacity-10 group-hover:scale-125 group-hover:rotate-6 transition-transform duration-500">
                       {card.emoji}
                     </div>
-                    <p className={`text-xs uppercase tracking-widest font-bold ${card.accent}`}>{card.stat}</p>
-                    <h3 className="text-2xl font-black text-white mt-1">{card.title}</h3>
-                    <p className="text-white/65 text-sm leading-relaxed mt-3">{card.description}</p>
-                    <p className={`mt-5 font-bold ${card.accent} inline-flex items-center gap-1 group-hover:gap-2 transition-all`}>
-                      Explorer <span className="transition-transform group-hover:translate-x-1">→</span>
-                    </p>
-                  </div>
-                </button>
-              </Reveal>
-            ))}
-          </div>
-
-          {/* Feature image + Roger quote */}
-          <Reveal delay={120}>
-            <div className="mt-10 relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl group">
-              <div className="absolute inset-0">
-                <img
-                  src="/images/op-hero.jpg"
-                  alt="L'océan de One Piece"
-                  className="w-full h-[340px] sm:h-[420px] object-cover ken-burns group-hover:scale-105 transition-transform duration-700"
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a2e] via-[#0a0a2e]/55 to-[#0a0a2e]/30" />
-              <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a2e]/70 via-transparent to-[#0a0a2e]/70" />
-              <FloatingParticles count={8} />
-              <div className="relative h-[340px] sm:h-[420px] flex flex-col items-center justify-center text-center px-6">
-                <div className="text-6xl mb-4 skull-glow">☠️</div>
-                <blockquote className="max-w-2xl text-xl sm:text-3xl font-black text-white italic leading-snug drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
-                  « Ce que tu veux existe forcément quelque part sur cette Terre. »
-                </blockquote>
-                <p className="mt-4 text-amber-300 font-bold tracking-wide">— Gol D. Roger, le Roi des Pirates</p>
-              </div>
-            </div>
-          </Reveal>
-
-          {/* Footer stats strip */}
-          <Reveal delay={120}>
-            <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4">
-              {[
-                { label: 'Mers', value: seas.length, icon: '🌊' },
-                { label: 'Îles', value: totalIslands, icon: '🏝️' },
-                { label: 'Personnages', value: characters.length, icon: '⚔️' },
-                { label: 'Navires', value: ships.length, icon: '🚢' },
-              ].map(item => (
-                <div key={item.label} className="rounded-xl bg-white/5 border border-white/10 p-4 text-center hover:bg-white/10 hover:border-white/20 transition-all">
-                  <div className="text-3xl">{item.icon}</div>
-                  <div className="text-3xl font-black text-white mt-2 tabular-nums">{item.value}</div>
-                  <div className="text-white/45 text-xs uppercase tracking-widest">{item.label}</div>
-                </div>
+                    <div className="relative">
+                      <div className="text-5xl mb-4 group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-300 inline-block">
+                        {card.emoji}
+                      </div>
+                      <p className={`text-xs uppercase tracking-widest font-bold ${card.accent}`}>{card.stat}</p>
+                      <h3 className="text-2xl font-black text-white mt-1">{card.title}</h3>
+                      <p className="text-white/65 text-sm leading-relaxed mt-3">{card.description}</p>
+                      <p className={`mt-5 font-bold ${card.accent} inline-flex items-center gap-1 group-hover:gap-2 transition-all`}>
+                        Explorer <span className="transition-transform group-hover:translate-x-1">→</span>
+                      </p>
+                    </div>
+                  </button>
+                </Reveal>
               ))}
             </div>
-          </Reveal>
-        </div>
-      </section>
-    </div>
+
+            {/* Feature image + Roger quote */}
+            <Reveal delay={120}>
+              <div className="mt-10 relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl group">
+                <div className="absolute inset-0">
+                  <img
+                    src="/images/op-hero.jpg"
+                    alt="L'océan de One Piece"
+                    className="w-full h-[340px] sm:h-[420px] object-cover ken-burns group-hover:scale-105 transition-transform duration-700" />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a2e] via-[#0a0a2e]/55 to-[#0a0a2e]/30" />
+                <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a2e]/70 via-transparent to-[#0a0a2e]/70" />
+                <FloatingParticles count={8} />
+                <div className="relative h-[340px] sm:h-[420px] flex flex-col items-center justify-center text-center px-6">
+                  <div className="text-6xl mb-4 skull-glow">☠️</div>
+                  <blockquote className="max-w-2xl text-xl sm:text-3xl font-black text-white italic leading-snug drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
+                    « Ce que tu veux existe forcément quelque part sur cette Terre. »
+                  </blockquote>
+                  <p className="mt-4 text-amber-300 font-bold tracking-wide">— Gol D. Roger, le Roi des Pirates</p>
+                </div>
+              </div>
+            </Reveal>
+
+            {/* Footer stats strip */}
+            <Reveal delay={120}>
+              <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4">
+                {[
+                  { label: 'Mers', value: seas.length, icon: '🌊' },
+                  { label: 'Îles', value: totalIslands, icon: '🏝️' },
+                  { label: 'Personnages', value: characters.length, icon: '⚔️' },
+                  { label: 'Navires', value: ships.length, icon: '🚢' },
+                ].map(item => (
+                  <div key={item.label} className="rounded-xl bg-white/5 border border-white/10 p-4 text-center hover:bg-white/10 hover:border-white/20 transition-all">
+                    <div className="text-3xl">{item.icon}</div>
+                    <div className="text-3xl font-black text-white mt-2 tabular-nums">{item.value}</div>
+                    <div className="text-white/45 text-xs uppercase tracking-widest">{item.label}</div>
+                  </div>
+                ))}
+              </div>
+            </Reveal>
+          </div>
+        </section>
+      </div></>
   );
 }
 
