@@ -168,82 +168,8 @@ function HomePage({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
 
   return (
     <div className="h-full overflow-y-auto relative">
-      <section className="relative min-h-[calc(100vh-64px)] flex items-center justify-center px-4 py-12 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(245,158,11,0.22),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(14,165,233,0.22),transparent_35%)]" />
-        <div className="absolute inset-x-0 bottom-0 h-44 bg-linear-to-t from-[#0a0a2e] to-transparent" />
-        <div className="absolute -top-24 -left-24 w-72 h-72 bg-amber-400/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute -bottom-20 -right-16 w-80 h-80 bg-cyan-400/10 rounded-full blur-3xl animate-pulse" />
+            <ExtremeHero onNavigate={(tab: string) => onNavigate(tab as Tab)} />
 
-        <div className="relative z-10 max-w-6xl mx-auto grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-center">
-          <div className="text-center lg:text-left space-y-7">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black/35 border border-amber-400/25 text-amber-300 text-xs font-bold tracking-[0.3em] uppercase">
-              ☠️ One Piece — World Atlas
-            </div>
-
-            <div>
-              <div className="text-7xl sm:text-8xl mb-3 drop-shadow-[0_0_25px_rgba(245,158,11,0.45)]">☠️</div>
-              <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black leading-none bg-linear-to-r from-amber-300 via-red-400 to-amber-300 bg-clip-text text-transparent">
-                ONE PIECE
-              </h1>
-              <p className="mt-3 text-xl sm:text-3xl font-black tracking-[0.28em] text-cyan-200 subtitle-shimmer">
-                ⚓ WORLD ATLAS ⚓
-              </p>
-            </div>
-
-            <p className="max-w-2xl mx-auto lg:mx-0 text-white/75 text-base sm:text-lg leading-relaxed">
-              Explorez l'univers complet de One Piece : mers, îles mystérieuses, personnages légendaires,
-              fruits du démon, Haki et navires épiques. Partez à l'aventure avec le futur Roi des Pirates !
-            </p>
-
-            <div className="grid grid-cols-3 gap-3 max-w-xl mx-auto lg:mx-0">
-              {[
-                { emoji: '🌊', value: seas.length, label: 'Zones' },
-                { emoji: '🏝️', value: totalIslands, label: 'Îles' },
-                { emoji: '🍎', value: totalDevilFruits, label: 'Fruits' },
-              ].map(item => (
-                <div key={item.label} className="rounded-2xl bg-white/8 border border-white/10 p-4 backdrop-blur-md">
-                  <div className="text-2xl">{item.emoji}</div>
-                  <div className="text-2xl font-black text-white mt-1">{item.value}</div>
-                  <div className="text-xs text-white/45 uppercase tracking-widest">{item.label}</div>
-                </div>
-              ))}
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
-              <button onClick={() => onNavigate('world')} className="px-5 py-3 rounded-xl bg-cyan-400/15 hover:bg-cyan-400/25 border border-cyan-300/30 text-cyan-100 font-black transition-all cursor-pointer">
-                🌊 Explorer les Mers
-              </button>
-              <button onClick={() => onNavigate('characters')} className="px-5 py-3 rounded-xl bg-amber-400/15 hover:bg-amber-400/25 border border-amber-300/30 text-amber-100 font-black transition-all cursor-pointer">
-                ⚔️ Voir les Personnages
-              </button>
-              <button onClick={() => onNavigate('ships')} className="px-5 py-3 rounded-xl bg-white/8 hover:bg-white/12 border border-white/15 text-white font-black transition-all cursor-pointer">
-                🚢 Les Navires
-              </button>
-            </div>
-
-            <blockquote className="max-w-2xl mx-auto lg:mx-0 text-white/65 italic border-l-4 border-amber-400/50 pl-4">
-              “Je ne veux pas conquérir le monde. Je veux juste être la personne la plus libre sur cette mer.”
-            </blockquote>
-          </div>
-
-          <div className="relative hidden lg:block">
-            <div className="absolute inset-0 bg-linear-to-br from-amber-400/30 to-cyan-400/20 rounded-4xl blur-2xl" />
-            <div className="relative rounded-4xl overflow-hidden border border-white/15 bg-black/30 shadow-2xl">
-              <img src="/images/luffy.jpg" alt="Monkey D. Luffy" className="h-[560px] w-full object-cover object-top opacity-80" />
-              <div className="absolute inset-0 bg-linear-to-t from-[#0a0a2e] via-transparent to-black/20" />
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <p className="text-amber-300 text-sm font-bold uppercase tracking-[0.25em]">Personnage vedette</p>
-                <h2 className="text-3xl font-black">Monkey D. Luffy</h2>
-                <p className="text-white/60 text-sm mt-1">Gear 5 • Fruit Nika • Haki des Rois avancé</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="absolute bottom-5 left-1/2 -translate-x-1/2 text-white/35 text-xs uppercase tracking-[0.25em] animate-bounce">
-          Défiler
-        </div>
-      </section>
 
       <section className="relative px-4 pb-16">
         <div className="max-w-6xl mx-auto">
