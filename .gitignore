@@ -2,3 +2,13 @@ node_modules/
 dist/
 .env
 .env.*
+*.log
+.DS_Store
+*.py
+arena-*
+.vscode/
+.idea/
+coverage/
+.vercel
+.netlify
+*.patch
