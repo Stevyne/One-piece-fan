@@ -194,7 +194,7 @@ export const ships: Ship[] = [
     name: "Buggy's Big Top",
     crew: "Buggy Pirates / Buggy's Delivery",
     type: "Circus Ship",
-    image: "/images/Big-Top.jpg",
+    image: "/images/Big_Top.jpg",
     description: "Buggy's distinctive circus-themed ship. Features a big top tent design befitting the Clown Captain.",
     size: "Medium",
     figurehead: "Clown face",
