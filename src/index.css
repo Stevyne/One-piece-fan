@@ -1,449 +1,188 @@
 @import "tailwindcss";
 
 @layer base {
-  html, body, #root {
+  html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
   }
-
+  #root {
+    width: 100%;
+    min-height: 100vh;
+  }
   body {
     background: #0a0a2e;
     color: white;
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
   }
-
-  ::-webkit-scrollbar { width: 6px; }
-  ::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.05); }
-  ::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.15); border-radius: 3px; }
-  ::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.25); }
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); }
+  ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.25); }
 }
 
+/* Utilities */
 @layer utilities {
   .line-clamp-2 {
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+  .preserve-3d { transform-style: preserve-3d; }
+  .bg-gradient-extreme {
+    background: linear-gradient(180deg, #02020a 0%, #0c0c2e 40%, #0a0a2e 100%);
+  }
 }
 
-/* ========== Character Animations ========== */
+/* === Character Animations === */
+@keyframes characterBreathe { 0%,100%{transform:scale(1)} 50%{transform:scale(1.03)} }
+.character-breathe { animation: characterBreathe 3s ease-in-out infinite; }
 
-/* Breathing */
-@keyframes characterBreathe {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.03); }
-}
-.character-breathe {
-  animation: characterBreathe 3s ease-in-out infinite;
-}
+@keyframes letterFloat { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-4px)} }
+.character-letter { animation: letterFloat 2.5s ease-in-out infinite; display:inline-block; }
 
-/* Letter float */
-@keyframes letterFloat {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-4px); }
-}
-.character-letter {
-  animation: letterFloat 2.5s ease-in-out infinite;
-  display: inline-block;
-}
+@keyframes innerGlow { 0%,100%{opacity:.4} 50%{opacity:.8} }
+.inner-glow { animation: innerGlow 3s ease-in-out infinite; }
 
-/* Inner glow */
-@keyframes innerGlow {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 0.8; }
-}
-.inner-glow {
-  animation: innerGlow 3s ease-in-out infinite;
-}
+@keyframes ambientGlow { 0%,100%{opacity:.3;transform:scale(1)} 50%{opacity:.6;transform:scale(1.08)} }
+.character-ambient-glow { animation: ambientGlow 4s ease-in-out infinite; }
 
-/* Ambient glow */
-@keyframes ambientGlow {
-  0%, 100% { opacity: 0.3; transform: scale(1); }
-  50% { opacity: 0.6; transform: scale(1.08); }
-}
-.character-ambient-glow {
-  animation: ambientGlow 4s ease-in-out infinite;
-}
+@keyframes bgGradientShift { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+.character-bg-gradient { animation: bgGradientShift 10s ease-in-out infinite; background-size:200% 200%; }
 
-/* Background gradient shift */
-@keyframes bgGradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-.character-bg-gradient {
-  animation: bgGradientShift 10s ease-in-out infinite;
-  background-size: 200% 200%;
-}
-
-/* Background pattern */
-@keyframes patternMove {
-  0% { background-position: 0 0; }
-  100% { background-position: 40px 40px; }
-}
+@keyframes patternMove { 0%{background-position:0 0} 100%{background-position:40px 40px} }
 .bg-pattern-animate {
   background-image: radial-gradient(circle, rgba(255,255,255,0.15) 1px, transparent 1px);
   background-size: 40px 40px;
   animation: patternMove 5s linear infinite;
 }
 
-/* ========== Fruit Animations ========== */
-
-/* Particle float */
+/* === Fruit === */
 @keyframes fruitParticleFloat {
-  0% {
-    transform: translate(0, 0) rotate(0deg) scale(0.5);
-    opacity: 0;
-  }
-  15% {
-    opacity: 1;
-    transform: translate(10px, -20px) rotate(30deg) scale(1);
-  }
-  85% {
-    opacity: 0.8;
-    transform: translate(-15px, -60px) rotate(200deg) scale(0.9);
-  }
-  100% {
-    transform: translate(5px, -80px) rotate(360deg) scale(0.3);
-    opacity: 0;
-  }
+  0%{transform:translate(0,0) rotate(0deg) scale(.5); opacity:0}
+  15%{opacity:1; transform:translate(10px,-20px) rotate(30deg) scale(1)}
+  85%{opacity:.8; transform:translate(-15px,-60px) rotate(200deg) scale(.9)}
+  100%{transform:translate(5px,-80px) rotate(360deg) scale(.3); opacity:0}
 }
-.fruit-particle {
-  animation: fruitParticleFloat var(--duration, 5s) ease-out infinite;
-  animation-delay: var(--delay, 0s);
-}
+.fruit-particle { animation: fruitParticleFloat var(--duration,5s) ease-out infinite; animation-delay: var(--delay,0s); }
 
-/* Fruit arm connection pulse */
-@keyframes armPulse {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 0.8; }
-}
-.fruit-arm-connect {
-  animation: armPulse 2s ease-in-out infinite;
-}
+@keyframes armPulse { 0%,100%{opacity:.4} 50%{opacity:.8} }
+.fruit-arm-connect { animation: armPulse 2s ease-in-out infinite; }
 
-/* Mini orbit particles around fruit */
-@keyframes fruitMiniOrbit {
-  0% { transform: translate(-15px, 0) scale(1); }
-  25% { transform: translate(0, -15px) scale(0.6); }
-  50% { transform: translate(15px, 0) scale(1); }
-  75% { transform: translate(0, 15px) scale(0.6); }
-  100% { transform: translate(-15px, 0) scale(1); }
-}
-
-/* Awakening shimmer */
-@keyframes awakeningShimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
-}
+@keyframes awakeningShimmer { 0%{background-position:-200% 0} 100%{background-position:200% 0} }
 .awakening-shimmer {
-  background: linear-gradient(90deg, transparent 0%, rgba(255, 215, 0, 0.4) 50%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, rgba(255,215,0,0.4) 50%, transparent 100%);
   background-size: 200% 100%;
   animation: awakeningShimmer 1.5s linear infinite;
 }
-
-/* ========== Haki Animations ========== */
-
-/* Observation Haki scanning rings */
-@keyframes observationScan {
-  0% {
-    transform: scale(1);
-    opacity: 0.7;
-  }
-  100% {
-    transform: scale(1.5);
-    opacity: 0;
-  }
+@keyframes fruitMiniOrbit {
+  0%{transform:translate(-15px,0) scale(1)} 25%{transform:translate(0,-15px) scale(.6)} 50%{transform:translate(15px,0) scale(1)} 75%{transform:translate(0,15px) scale(.6)} 100%{transform:translate(-15px,0) scale(1)}
 }
 
-/* Observation eye pulse */
-@keyframes observationEyePulse {
-  0%, 100% { transform: translateX(-50%) scale(1); opacity: 0.7; }
-  50% { transform: translateX(-50%) scale(1.3); opacity: 1; }
-}
-.observation-eye {
-  animation: observationEyePulse 2s ease-in-out infinite;
-}
+/* === Haki === */
+@keyframes observationScan { 0%{transform:scale(1); opacity:.7} 100%{transform:scale(1.5); opacity:0} }
+@keyframes observationEyePulse { 0%,100%{transform:translateX(-50%) scale(1); opacity:.7} 50%{transform:translateX(-50%) scale(1.3); opacity:1} }
+.observation-eye { animation: observationEyePulse 2s ease-in-out infinite; }
 
-/* Armament hardening pulse */
-@keyframes armamentHarden {
-  0%, 100% {
-    opacity: 0.5;
-    border-color: #374151;
-  }
-  50% {
-    opacity: 0.9;
-    border-color: #6366F1;
-  }
-}
-.armament-hardening {
-  animation: armamentHarden 1.2s ease-in-out infinite;
-  border-radius: 50%;
-}
+@keyframes armamentHarden { 0%,100%{opacity:.5; border-color:#374151} 50%{opacity:.9; border-color:#6366F1} }
+.armament-hardening { animation: armamentHarden 1.2s ease-in-out infinite; border-radius:50%; }
+@keyframes armamentFlash { 0%,100%{opacity:0} 10%{opacity:.8} 30%{opacity:0} 60%{opacity:.4} 80%{opacity:0} }
+.armament-flash { animation: armamentFlash 2s ease-in-out infinite; border-radius:50%; }
+@keyframes armamentOverlayPulse { 0%,100%{opacity:.3} 50%{opacity:.6} }
+.armament-overlay { animation: armamentOverlayPulse 1.5s ease-in-out infinite; }
 
-/* Armament flash */
-@keyframes armamentFlash {
-  0%, 100% { opacity: 0; }
-  10% { opacity: 0.8; }
-  30% { opacity: 0; }
-  60% { opacity: 0.4; }
-  80% { opacity: 0; }
-}
-.armament-flash {
-  animation: armamentFlash 2s ease-in-out infinite;
-  border-radius: 50%;
-}
+@keyframes conquerorBurst { 0%{transform:scale(1); opacity:.5} 50%{transform:scale(1.2); opacity:.15} 100%{transform:scale(1); opacity:.5} }
+.conqueror-burst { animation: conquerorBurst 2s ease-in-out infinite; border-radius:50%; }
+@keyframes boltFlash { 0%{opacity:0; transform:translate(-50%,-50%) scaleY(0)} 8%{opacity:1; transform:translate(-50%,-50%) scaleY(1)} 20%{opacity:.8; transform:translate(-50%,-50%) scaleY(1.1)} 35%{opacity:0; transform:translate(-50%,-50%) scaleY(.8)} 100%{opacity:0} }
+.conqueror-bolt-svg { animation: boltFlash 2s ease-out infinite; position:absolute; }
+@keyframes crownFloat { 0%,100%{transform:translateX(-50%) translateY(0) rotate(-5deg)} 50%{transform:translateX(-50%) translateY(-5px) rotate(5deg)} }
+.conqueror-crown { animation: crownFloat 2.5s ease-in-out infinite; }
+@keyframes crownMiniPulse { 0%,100%{transform:scale(1); filter:drop-shadow(0 0 4px currentColor)} 50%{transform:scale(1.2); filter:drop-shadow(0 0 8px currentColor)} }
+.conqueror-crown-mini { animation: crownMiniPulse 2s ease-in-out infinite; }
+@keyframes conquerorBgPulse { 0%,100%{opacity:.3} 50%{opacity:.8} }
+.conqueror-bg-pulse { animation: conquerorBgPulse 3s ease-in-out infinite; }
 
-/* Armament overlay pulse */
-@keyframes armamentOverlayPulse {
-  0%, 100% { opacity: 0.3; }
-  50% { opacity: 0.6; }
-}
-.armament-overlay {
-  animation: armamentOverlayPulse 1.5s ease-in-out infinite;
-}
+@keyframes hakiRing1 { 0%{transform:scale(1); opacity:.6} 100%{transform:scale(1.8); opacity:0} }
+@keyframes hakiRing2 { 0%{transform:scale(1); opacity:.4} 100%{transform:scale(2.2); opacity:0} }
+.haki-ring-1 { animation: hakiRing1 2s ease-out infinite; border-radius:50%; }
+.haki-ring-2 { animation: hakiRing2 2.8s ease-out infinite; animation-delay:.6s; border-radius:50%; }
 
-/* Conqueror's burst */
-@keyframes conquerorBurst {
-  0% {
-    transform: scale(1);
-    opacity: 0.5;
-  }
-  50% {
-    transform: scale(1.2);
-    opacity: 0.15;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0.5;
-  }
-}
-.conqueror-burst {
-  animation: conquerorBurst 2s ease-in-out infinite;
-  border-radius: 50%;
-}
-
-/* Conqueror lightning bolt */
-@keyframes boltFlash {
-  0% { opacity: 0; transform: translate(-50%, -50%) scaleY(0); }
-  8% { opacity: 1; transform: translate(-50%, -50%) scaleY(1); }
-  20% { opacity: 0.8; transform: translate(-50%, -50%) scaleY(1.1); }
-  35% { opacity: 0; transform: translate(-50%, -50%) scaleY(0.8); }
-  100% { opacity: 0; }
-}
-.conqueror-bolt-svg {
-  animation: boltFlash 2s ease-out infinite;
-  animation-delay: var(--bolt-delay, 0s);
-  position: absolute;
-}
-
-/* Conqueror crown */
-@keyframes crownFloat {
-  0%, 100% { transform: translateX(-50%) translateY(0) rotate(-5deg); }
-  50% { transform: translateX(-50%) translateY(-5px) rotate(5deg); }
-}
-.conqueror-crown {
-  animation: crownFloat 2.5s ease-in-out infinite;
-}
-
-/* Conqueror crown mini */
-@keyframes crownMiniPulse {
-  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 4px currentColor); }
-  50% { transform: scale(1.2); filter: drop-shadow(0 0 8px currentColor); }
-}
-.conqueror-crown-mini {
-  animation: crownMiniPulse 2s ease-in-out infinite;
-}
-
-/* Conqueror background pulse */
-@keyframes conquerorBgPulse {
-  0%, 100% { opacity: 0.3; }
-  50% { opacity: 0.8; }
-}
-.conqueror-bg-pulse {
-  animation: conquerorBgPulse 3s ease-in-out infinite;
-}
-
-/* Haki ring animations */
-@keyframes hakiRing1 {
-  0% { transform: scale(1); opacity: 0.6; }
-  100% { transform: scale(1.8); opacity: 0; }
-}
-@keyframes hakiRing2 {
-  0% { transform: scale(1); opacity: 0.4; }
-  100% { transform: scale(2.2); opacity: 0; }
-}
-.haki-ring-1 {
-  animation: hakiRing1 2s ease-out infinite;
-  border-radius: 50%;
-}
-.haki-ring-2 {
-  animation: hakiRing2 2.8s ease-out infinite;
-  animation-delay: 0.6s;
-  border-radius: 50%;
-}
-
-/* Observation ring expand (World3D) */
-@keyframes observationRingExpand {
-  0% { transform: scale(1); opacity: 0.6; }
-  50% { transform: scale(1.15); opacity: 0.2; }
-  100% { transform: scale(1); opacity: 0.6; }
-}
-.observation-ring {
-  animation: observationRingExpand 2s ease-in-out infinite;
-  border-radius: 50%;
-}
-.observation-ring-delayed {
-  animation: observationRingExpand 2s ease-in-out infinite;
-  animation-delay: 1s;
-  border-radius: 50%;
-}
-
-/* ========== Card Animations ========== */
-
-@keyframes cardShimmer {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
-}
-
-/* Scan line effect for character images */
+/* Cards / Effects */
 .scan-line-effect {
-  background: repeating-linear-gradient(
-    0deg,
-    transparent,
-    transparent 2px,
-    rgba(0, 0, 0, 0.08) 2px,
-    rgba(0, 0, 0, 0.08) 4px
-  );
+  background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.08) 2px, rgba(0,0,0,0.08) 4px);
 }
+@keyframes shipFloat { 0%,100%{transform:translateY(0) rotate(0)} 25%{transform:translateY(-3px) rotate(1deg)} 50%{transform:translateY(-1px) rotate(-.5deg)} 75%{transform:translateY(-4px) rotate(.5deg)} }
+.ship-float { animation: shipFloat 4s ease-in-out infinite; }
 
-/* Ship floating animation */
-@keyframes shipFloat {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  25% { transform: translateY(-3px) rotate(1deg); }
-  50% { transform: translateY(-1px) rotate(-0.5deg); }
-  75% { transform: translateY(-4px) rotate(0.5deg); }
-}
-.ship-float {
-  animation: shipFloat 4s ease-in-out infinite;
-}
-
-/* ========== Homepage Animations ========== */
-
-/* Floating skull emoji */
-@keyframes heroFloat {
-  0%, 100% { transform: translateY(0) rotate(-3deg); }
-  50% { transform: translateY(-16px) rotate(3deg); }
-}
-.hero-float {
-  animation: heroFloat 4.5s ease-in-out infinite;
-  display: inline-block;
-}
-
-/* Pulsing glow behind the skull */
-@keyframes skullGlow {
-  0%, 100% { filter: drop-shadow(0 0 25px rgba(245, 158, 11, 0.45)); transform: scale(1); }
-  50% { filter: drop-shadow(0 0 55px rgba(245, 158, 11, 0.8)); transform: scale(1.05); }
-}
-.skull-glow {
-  animation: skullGlow 3s ease-in-out infinite;
-  display: inline-block;
-}
-
-/* Animated gradient for the ONE PIECE title */
-@keyframes titleGradientShift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-}
-.title-gradient {
-  background-size: 250% auto;
-  animation: titleGradientShift 6s ease infinite;
-}
-
-/* Slow counter-rotation for decorative rings */
-@keyframes slowSpin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-@keyframes slowSpinReverse {
-  from { transform: rotate(360deg); }
-  to { transform: rotate(0deg); }
-}
-.slow-spin { animation: slowSpin 28s linear infinite; }
-.slow-spin-reverse { animation: slowSpinReverse 35s linear infinite; }
-
-/* Drifting background blobs */
-@keyframes driftBlob {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  33% { transform: translate(40px, -30px) scale(1.1); }
-  66% { transform: translate(-30px, 25px) scale(0.95); }
-}
+/* === Homepage hero === */
+@keyframes heroFloat { 0%,100%{transform:translateY(0) rotate(-3deg)} 50%{transform:translateY(-16px) rotate(3deg)} }
+.hero-float { animation: heroFloat 4.5s ease-in-out infinite; display:inline-block; }
+@keyframes skullGlow { 0%,100%{filter:drop-shadow(0 0 25px rgba(245,158,11,.45)); transform:scale(1)} 50%{filter:drop-shadow(0 0 55px rgba(245,158,11,.8)); transform:scale(1.05)} }
+.skull-glow { animation: skullGlow 3s ease-in-out infinite; display:inline-block; }
+@keyframes titleGradientShift { 0%,100%{background-position:0% 50%} 50%{background-position:100% 50%} }
+.title-gradient { background-size:250% auto; animation: titleGradientShift 6s ease infinite; }
+@keyframes driftBlob { 0%,100%{transform:translate(0,0) scale(1)} 33%{transform:translate(40px,-30px) scale(1.1)} 66%{transform:translate(-30px,25px) scale(.95)} }
 .drift-blob { animation: driftBlob 14s ease-in-out infinite; }
-
-/* Shimmering sweep across hero badge / buttons */
-@keyframes shimmerSweep {
-  0% { transform: translateX(-150%) skewX(-20deg); }
-  100% { transform: translateX(250%) skewX(-20deg); }
-}
-.shimmer-sweep {
-  animation: shimmerSweep 3.5s ease-in-out infinite;
-}
-
-/* Gentle bob for scroll indicator chevron */
-@keyframes scrollBob {
-  0%, 100% { transform: translateY(0); opacity: 0.4; }
-  50% { transform: translateY(8px); opacity: 1; }
-}
+@keyframes shimmerSweep { 0%{transform:translateX(-150%) skewX(-20deg)} 100%{transform:translateX(250%) skewX(-20deg)} }
+.shimmer-sweep { animation: shimmerSweep 3.5s ease-in-out infinite; }
+@keyframes scrollBob { 0%,100%{transform:translateY(0); opacity:.4} 50%{transform:translateY(8px); opacity:1} }
 .scroll-bob { animation: scrollBob 1.8s ease-in-out infinite; }
-
-/* Floating particles rising upward */
-@keyframes riseParticle {
-  0% { transform: translateY(0) translateX(0) scale(1); opacity: 0; }
-  10% { opacity: 0.9; }
-  90% { opacity: 0.5; }
-  100% { transform: translateY(-120px) translateX(var(--drift, 0px)) scale(0.4); opacity: 0; }
-}
-.rise-particle {
-  animation: riseParticle var(--dur, 6s) ease-in infinite;
-  animation-delay: var(--delay, 0s);
-}
-
-/* Parallax-style Ken Burns zoom for the hero feature image */
-@keyframes kenBurns {
-  0% { transform: scale(1) translate(0, 0); }
-  50% { transform: scale(1.12) translate(-1.5%, -1%); }
-  100% { transform: scale(1) translate(0, 0); }
-}
+@keyframes riseParticle { 0%{transform:translateY(0) translateX(0) scale(1); opacity:0} 10%{opacity:.9} 90%{opacity:.5} 100%{transform:translateY(-120px) translateX(var(--drift,0px)) scale(.4); opacity:0} }
+.rise-particle { animation: riseParticle var(--dur,6s) ease-in infinite; animation-delay: var(--delay,0s); }
+@keyframes kenBurns { 0%{transform:scale(1) translate(0,0)} 50%{transform:scale(1.12) translate(-1.5%,-1%)} 100%{transform:scale(1) translate(0,0)} }
 .ken-burns { animation: kenBurns 20s ease-in-out infinite; }
-
-/* Respect reduced-motion preferences */
-@media (prefers-reduced-motion: reduce) {
-  .hero-float, .skull-glow, .title-gradient, .slow-spin, .slow-spin-reverse,
-  .drift-blob, .shimmer-sweep, .scroll-bob, .rise-particle, .ken-burns {
-    animation: none !important;
-  }
-}
-
-/* Water wave at bottom of ship image */
-@keyframes waterWave {
-  0% { background-position-x: 0; }
-  100% { background-position-x: 100px; }
-}
+@keyframes waterWave { 0%{background-position-x:0} 100%{background-position-x:100px} }
 .ship-water-wave {
-  background: linear-gradient(
-    90deg,
-    rgba(6, 182, 212, 0.15) 0%,
-    rgba(6, 182, 212, 0.05) 25%,
-    rgba(6, 182, 212, 0.2) 50%,
-    rgba(6, 182, 212, 0.05) 75%,
-    rgba(6, 182, 212, 0.15) 100%
-  );
+  background: linear-gradient(90deg, rgba(6,182,212,.15) 0%, rgba(6,182,212,.05)25%, rgba(6,182,212,.2)50%, rgba(6,182,212,.05)75%, rgba(6,182,212,.15)100%);
   background-size: 100px 100%;
   animation: waterWave 3s linear infinite;
   mask-image: linear-gradient(to top, rgba(0,0,0,1), transparent);
-  -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1), transparent);
+}
+@keyframes letterDrop {
+  0%{opacity:0; transform:translateY(-80px) rotateX(50deg) rotateY(-20deg); filter:blur(10px)}
+  50%{opacity:.9; transform:translateY(10px) rotateX(-10deg) rotateY(10deg); filter:blur(1px)}
+  100%{opacity:1; transform:translateY(0) rotateX(0) rotateY(0); filter:blur(0)}
+}
+.animate-letter-drop { animation: letterDrop 1s cubic-bezier(0.22,1,0.36,1) both; display:inline-block; transform-origin:bottom center; }
+
+@keyframes glitchShift {
+  0%{text-shadow:2px 2px 2px rgba(230,184,77,.4), -2px -2px 2px rgba(34,211,238,.3)}
+  20%{text-shadow:-2px 2px 2px rgba(230,184,77,.4), 2px -2px 2px rgba(34,211,238,.3)}
+  40%{text-shadow:2px -2px 2px rgba(230,184,77,.4), -2px 2px 2px rgba(34,211,238,.3)}
+  60%{text-shadow:-2px -2px 2px rgba(230,184,77,.4), 2px 2px 2px rgba(34,211,238,.3)}
+  80%{text-shadow:2px 2px 2px rgba(230,184,77,.4), -2px -2px 2px rgba(34,211,238,.3)}
+  100%{text-shadow:2px 2px 2px rgba(230,184,77,.4), -2px -2px 2px rgba(34,211,238,.3)}
+}
+.glitch-text:hover { animation: glitchShift .3s ease-in-out 3; }
+
+@keyframes btnGlowPulse {
+  0%,100%{box-shadow:0 0 15px rgba(230,184,77,.2), inset 0 0 10px rgba(230,184,77,.1); border-color:rgba(230,184,77,.5)}
+  50%{box-shadow:0 0 30px rgba(230,184,77,.5), 0 0 60px rgba(230,184,77,.2), inset 0 0 15px rgba(230,184,77,.2); border-color:rgba(230,184,77,.9)}
+}
+.btn-glow-pulse { animation: btnGlowPulse 2.5s ease-in-out infinite; }
+
+@keyframes subtitleShimmer { 0%{background-position:-200% center} 100%{background-position:200% center} }
+.subtitle-shimmer {
+  background: linear-gradient(90deg, rgba(230,184,77,.3), rgba(230,184,77,.9), rgba(230,184,77,.3));
+  background-size:200% auto;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+  animation: subtitleShimmer 3s linear infinite;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .hero-float, .skull-glow, .title-gradient, .drift-blob, .shimmer-sweep,
+  .scroll-bob, .rise-particle, .ken-burns, .character-breathe, .character-ambient-glow,
+  .animate-letter-drop, .btn-glow-pulse, .subtitle-shimmer, .glitch-text:hover, .ship-float {
+    animation: none !important;
+  }
 }
