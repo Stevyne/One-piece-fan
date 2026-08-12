@@ -11,3 +11,5 @@ arena-*
 coverage/
 .vercel
 .netlify
+
+*.patch
