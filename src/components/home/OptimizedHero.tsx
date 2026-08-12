@@ -299,6 +299,7 @@ export default function OptimizedHero({ onNavigate, seasCount = 4, charactersCou
             { label: '⚔️ Personnages', tab: 'characters', color: 'amber' },
             { label: '🍎 Fruits du Démon', tab: 'fruits', color: 'pink' },
             { label: '🚢 Navires', tab: 'ships', color: 'white' },
+            { label: '🧭 Timeline Log Pose', tab: 'timeline', color: 'amber' },
           ].map((btn) => (
             <button
               key={btn.tab}

@@ -45,7 +45,7 @@ export default function HomePage() {
       emoji: '⚔️',
       stat: `${characters.length}+ Personnages`,
       title: 'Personnages',
-      description: 'Pirates légendaires, amiraux redoutables et révolutionnaires. Découvrez leurs fruits du démon et leur Haki.',
+      description: 'Pirates légendaires, amiraux redoutables et révolutionnaires. Découvrez leurs fruits du démon et leur Haki. 22 nouveaux ajoutés v1.1',
       color: 'from-amber-400/25 to-red-500/10',
       border: 'border-amber-300/25',
       hoverBorder: 'hover:border-amber-300/60',
@@ -76,6 +76,18 @@ export default function HomePage() {
       glow: 'group-hover:shadow-sky-400/30',
       accent: 'text-sky-300',
     },
+    {
+      path: '/timeline',
+      emoji: '🧭',
+      stat: `32 Arcs`,
+      title: 'Timeline Log Pose',
+      description: 'Tout le voyage de Romance Dawn à Elbaf. Log Pose temps, primes milestones, sagas. NOUVEAU v1.1',
+      color: 'from-amber-400/25 to-yellow-500/10',
+      border: 'border-amber-300/25',
+      hoverBorder: 'hover:border-amber-300/60',
+      glow: 'group-hover:shadow-amber-400/30',
+      accent: 'text-amber-300',
+    },
   ];
 
   return (
@@ -101,7 +113,7 @@ export default function HomePage() {
             </div>
           </Reveal>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
             {highlights.map((card, i) => (
               <Reveal key={card.title} delay={i * 120}>
                 <button
