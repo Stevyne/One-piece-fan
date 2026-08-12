@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-// import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Header } from './layouts/Header';
 
 // Lazy load pages for code-splitting
