@@ -2137,7 +2137,6 @@ export const characters: Character[] = [
     epithet: "Fleet Admiral Krieg",
     crew: "Krieg Pirates",
     role: "Captain",
-    haki: { observation: false },
   techniques: [
     { name: "Coup puissant", description: "Coup signature.", type: "Other", emoji: "💥" },
   ],
@@ -2384,7 +2383,6 @@ export const characters: Character[] = [
     epithet: "The Heiress",
     crew: "Syrup Village",
     role: "Doctor-to-be",
-    haki: { observation: false },
   techniques: [
     { name: "Coup puissant", description: "Coup signature.", type: "Other", emoji: "💥" },
   ],
@@ -2436,7 +2434,6 @@ export const characters: Character[] = [
     epithet: "Quack Doctor",
     crew: "Drum Island",
     role: "Former Doctor / Father of Chopper",
-    haki: { observation: false },
   techniques: [
     { name: "Coup puissant", description: "Coup signature.", type: "Other", emoji: "💥" },
   ],
@@ -3116,7 +3113,7 @@ export const characters: Character[] = [
     color: "#F472B6",
     image: "/images/perso/toki.jpg"
   },
-  // ===== BATCH 6 - 26 MORE v1.4 - 180 TOTAL + TECHNIQUES =====
+
   {
     name: "Kurozumi Kanjuro",
     epithet: "Evening Shower",
@@ -3134,6 +3131,7 @@ export const characters: Character[] = [
     color: "#1F2937",
     image: "/images/perso/kanjuro.jpg"
   },
+
   {
     name: "Shinobu",
     epithet: "The Ninja",
@@ -3150,6 +3148,7 @@ export const characters: Character[] = [
     color: "#EC4899",
     image: "/images/perso/shinobu.jpg"
   },
+
   {
     name: "Jozu",
     epithet: "Diamond Jozu",
@@ -3166,6 +3165,7 @@ export const characters: Character[] = [
     color: "#A3A3A3",
     image: "/images/perso/jozu.jpg"
   },
+
   {
     name: "Vista",
     epithet: "Flower Sword Vista",
@@ -3181,6 +3181,7 @@ export const characters: Character[] = [
     color: "#F472B6",
     image: "/images/perso/vista.jpg"
   },
+
   {
     name: "Lindbergh",
     epithet: "The Mink Revolutionary",
@@ -3196,6 +3197,7 @@ export const characters: Character[] = [
     color: "#FDE68A",
     image: "/images/perso/lindbergh.jpg"
   },
+
   {
     name: "Tsuru",
     epithet: "Great Staff Officer",
@@ -3211,6 +3213,7 @@ export const characters: Character[] = [
     color: "#A78BFA",
     image: "/images/perso/tsuru.jpg"
   },
+
   {
     name: "Gion",
     epithet: "Momousagi",
@@ -3226,6 +3229,7 @@ export const characters: Character[] = [
     color: "#F9A8D4",
     image: "/images/perso/momousagi.jpg"
   },
+
   {
     name: "Vergo",
     epithet: "Demon Bamboo",
@@ -3241,6 +3245,7 @@ export const characters: Character[] = [
     color: "#1F2937",
     image: "/images/perso/vergo.jpg"
   },
+
   {
     name: "Monet",
     epithet: "Snow Woman",
@@ -3257,6 +3262,7 @@ export const characters: Character[] = [
     color: "#E0F2FE",
     image: "/images/perso/monet.jpg"
   },
+
   {
     name: "Caesar Clown",
     epithet: "Master - Gas Man",
@@ -3274,6 +3280,7 @@ export const characters: Character[] = [
     color: "#A78BFA",
     image: "/images/perso/caesar.jpg"
   },
+
   {
     name: "Vinsmoke Reiju",
     epithet: "Poison Pink",
@@ -3289,6 +3296,7 @@ export const characters: Character[] = [
     color: "#F472B6",
     image: "/images/perso/reiju.jpg"
   },
+
   {
     name: "Vinsmoke Ichiji",
     epithet: "Sparking Red",
@@ -3303,6 +3311,7 @@ export const characters: Character[] = [
     color: "#EF4444",
     image: "/images/perso/ichiji.jpg"
   },
+
   {
     name: "Vinsmoke Niji",
     epithet: "Dengeki Blue",
@@ -3317,6 +3326,7 @@ export const characters: Character[] = [
     color: "#3B82F6",
     image: "/images/perso/niji.jpg"
   },
+
   {
     name: "Vinsmoke Yonji",
     epithet: "Winch Green",
@@ -3331,6 +3341,7 @@ export const characters: Character[] = [
     color: "#22C55E",
     image: "/images/perso/yonji.jpg"
   },
+
   {
     name: "Vinsmoke Judge",
     epithet: "Garma 66 Supreme Commander",
@@ -3345,6 +3356,7 @@ export const characters: Character[] = [
     color: "#FBBF24",
     image: "/images/perso/judge.jpg"
   },
+
   {
     name: "Charlotte Brûlée",
     epithet: "Mirror",
@@ -3360,6 +3372,7 @@ export const characters: Character[] = [
     color: "#EC4899",
     image: "/images/perso/brulee.jpg"
   },
+
   {
     name: "Jaguar D. Saul",
     epithet: "Dereshishishi",
@@ -3375,6 +3388,7 @@ export const characters: Character[] = [
     color: "#22C55E",
     image: "/images/perso/saul.jpg"
   },
+
   {
     name: "Hannyabal",
     epithet: "Vice Warden",
@@ -3389,6 +3403,7 @@ export const characters: Character[] = [
     color: "#6B7280",
     image: "/images/perso/hannyabal.jpg"
   },
+
   {
     name: "Domino",
     epithet: "Vice Warden's Assistant",
@@ -3403,6 +3418,7 @@ export const characters: Character[] = [
     color: "#FBBF24",
     image: "/images/perso/domino.jpg"
   },
+
   {
     name: "Duval",
     epithet: "Iron Mask",
@@ -3417,6 +3433,7 @@ export const characters: Character[] = [
     color: "#F59E0B",
     image: "/images/perso/duval.jpg"
   },
+
   {
     name: "Oimo",
     epithet: "Giant Guard of Enies Lobby",
@@ -3431,6 +3448,7 @@ export const characters: Character[] = [
     color: "#3B82F6",
     image: "/images/perso/oimo.jpg"
   },
+
   {
     name: "Kashii",
     epithet: "Giant Guard",
@@ -3445,6 +3463,7 @@ export const characters: Character[] = [
     color: "#EF4444",
     image: "/images/perso/kashii.jpg"
   },
+
   {
     name: "Gerd",
     epithet: "New Giant Warrior",
@@ -3459,6 +3478,7 @@ export const characters: Character[] = [
     color: "#22C55E",
     image: "/images/perso/gerd.jpg"
   },
+
   {
     name: "Goldberg",
     epithet: "New Giant Warrior",
@@ -3473,6 +3493,7 @@ export const characters: Character[] = [
     color: "#FBBF24",
     image: "/images/perso/goldberg.jpg"
   },
+
   {
     name: "Stansen",
     epithet: "Giant Log Collection",
@@ -3487,7 +3508,7 @@ export const characters: Character[] = [
     color: "#78716C",
     image: "/images/perso/stansen.jpg"
   },
-  // ===== BATCH 7 - 25 MORE v1.5 - 204 TOTAL + FRUITS IMAGES + SHIPS =====
+
   {
     name: "Atlas",
     epithet: "Violence - Vegapunk Sat 05",
@@ -3503,6 +3524,7 @@ export const characters: Character[] = [
     color: "#F472B6",
     image: "/images/perso/atlas.jpg"
   },
+
   {
     name: "Edison",
     epithet: "Thinking - Vegapunk Sat 03",
@@ -3517,6 +3539,7 @@ export const characters: Character[] = [
     color: "#A3A3A3",
     image: "/images/perso/edison.jpg"
   },
+
   {
     name: "Pythagoras",
     epithet: "Wisdom - Vegapunk Sat 04",
@@ -3531,6 +3554,7 @@ export const characters: Character[] = [
     color: "#6B7280",
     image: "/images/perso/pythagoras.jpg"
   },
+
   {
     name: "York",
     epithet: "Greed - Vegapunk Sat 06",
@@ -3545,6 +3569,7 @@ export const characters: Character[] = [
     color: "#FBBF24",
     image: "/images/perso/york.jpg"
   },
+
   {
     name: "Lilith",
     epithet: "Evil - Vegapunk Sat 02",
@@ -3559,6 +3584,7 @@ export const characters: Character[] = [
     color: "#000000",
     image: "/images/perso/lilith.jpg"
   },
+
   {
     name: "Shaka",
     epithet: "Good - Vegapunk Sat 01",
@@ -3573,6 +3599,7 @@ export const characters: Character[] = [
     color: "#F8FAFC",
     image: "/images/perso/shaka.jpg"
   },
+
   {
     name: "Carue",
     epithet: "The Running Duck",
@@ -3587,6 +3614,7 @@ export const characters: Character[] = [
     color: "#FBBF24",
     image: "/images/perso/carue.jpg"
   },
+
   {
     name: "Pell",
     epithet: "The Falcon",
@@ -3602,6 +3630,7 @@ export const characters: Character[] = [
     color: "#A3A3A3",
     image: "/images/perso/pell.jpg"
   },
+
   {
     name: "Chaka",
     epithet: "The Jackal",
@@ -3617,6 +3646,7 @@ export const characters: Character[] = [
     color: "#92400E",
     image: "/images/perso/chaka.jpg"
   },
+
   {
     name: "Igaram",
     epithet: "Mr. 8 - Igarappoi",
@@ -3631,6 +3661,7 @@ export const characters: Character[] = [
     color: "#1F2937",
     image: "/images/perso/igaram.jpg"
   },
+
   {
     name: "Wapol",
     epithet: "Tin Plate",
@@ -3648,6 +3679,7 @@ export const characters: Character[] = [
     color: "#F472B6",
     image: "/images/perso/wapol.jpg"
   },
+
   {
     name: "Dalton",
     epithet: "The Tough Guy",
@@ -3663,6 +3695,7 @@ export const characters: Character[] = [
     color: "#78350F",
     image: "/images/perso/dalton.jpg"
   },
+
   {
     name: "Kuroobi",
     epithet: "Black Belt",
@@ -3678,6 +3711,7 @@ export const characters: Character[] = [
     color: "#0E7490",
     image: "/images/perso/kuroobi.jpg"
   },
+
   {
     name: "Hatchan",
     epithet: "Hachi - Six-Sword Octopus",
@@ -3693,6 +3727,7 @@ export const characters: Character[] = [
     color: "#F472B6",
     image: "/images/perso/hatchan.jpg"
   },
+
   {
     name: "Sadi",
     epithet: "Sadi-chan",
@@ -3708,6 +3743,7 @@ export const characters: Character[] = [
     color: "#EC4899",
     image: "/images/perso/sadi.jpg"
   },
+
   {
     name: "Saldeath",
     epithet: "Blue Gorilla Commander",
@@ -3722,6 +3758,7 @@ export const characters: Character[] = [
     color: "#1E40AF",
     image: "/images/perso/saldeath.jpg"
   },
+
   {
     name: "Holdem",
     epithet: "Lion's Mouth",
@@ -3737,6 +3774,7 @@ export const characters: Character[] = [
     color: "#D97706",
     image: "/images/perso/holdem.jpg"
   },
+
   {
     name: "Speed",
     epithet: "The Horse Girl",
@@ -3752,6 +3790,7 @@ export const characters: Character[] = [
     color: "#FDE68A",
     image: "/images/perso/speed.jpg"
   },
+
   {
     name: "Dobon",
     epithet: "The Hippo",
@@ -3767,6 +3806,7 @@ export const characters: Character[] = [
     color: "#78716C",
     image: "/images/perso/dobon.jpg"
   },
+
   {
     name: "Charlotte Opera",
     epithet: "Cream Man",
@@ -3782,6 +3822,7 @@ export const characters: Character[] = [
     color: "#FDE68A",
     image: "/images/perso/opera.jpg"
   },
+
   {
     name: "Charlotte Galette",
     epithet: "Butter Girl",
@@ -3797,6 +3838,7 @@ export const characters: Character[] = [
     color: "#FBBF24",
     image: "/images/perso/galette.jpg"
   },
+
   {
     name: "Gin",
     epithet: "The Demon Man",
@@ -3812,6 +3854,7 @@ export const characters: Character[] = [
     color: "#6B7280",
     image: "/images/perso/gin.jpg"
   },
+
   {
     name: "Pearl",
     epithet: "The Iron Wall",
@@ -3827,6 +3870,7 @@ export const characters: Character[] = [
     color: "#FBBF24",
     image: "/images/perso/pearl.jpg"
   },
+
   {
     name: "Jango",
     epithet: "The Hypnotist",
@@ -3841,6 +3885,7 @@ export const characters: Character[] = [
     color: "#1F2937",
     image: "/images/perso/jango.jpg"
   },
+
   {
     name: "Fullbody",
     epithet: "Iron Fist Fullbody",
@@ -3856,4 +3901,712 @@ export const characters: Character[] = [
     color: "#F59E0B",
     image: "/images/perso/fullbody.jpg"
   },
+
+  {
+    name: "Kurozumi Tama",
+    epithet: "Tama the Kunoichi-in-training",
+    crew: "Kurozumi Clan / Wano / Straw Hat Allies",
+    role: "Kunoichi",
+    bounty: "0",
+    devilFruit: { name: "Kibi Kibi no Mi", type: "Paramecia", description: "Millet-Millet Fruit - Creates kibi dango that tames animals and SMILE users." },
+    haki: { observation: true },
+    techniques: [
+      { name: "Kibi Dango", description: "Dango qui apprivoise animaux et SMILE.", type: "Devil Fruit", emoji: "🍡" },
+    ],
+    description: "Petite fille 8 ans qui apprivoise animaux et SMILE avec dango.",
+    story: "Orpheline Wano dont parents morts Kaido usine poison. Elle fait dango Kibi Kibi qui dompte Speed, etc. Clé pour faire basculer Beast Pirates.",
+    color: "#F472B6",
+    image: "/images/tama.jpg"
+  },
+
+  {
+    name: "Shimotsuki Yasuie",
+    epithet: "Yasu - The Compassionate Daimyo",
+    crew: "Wano / Hakumai (Former Daimyo)",
+    role: "Former Daimyo",
+    haki: { observation: true },
+    techniques: [
+      { name: "Ebisu Laughter", description: "Rit même face à mort pour donner espoir.", type: "Other", emoji: "😂" },
+    ],
+    description: "Daimyo Hakumai qui se sacrifie en riant.",
+    story: "Père Toko, daimyo aimé. Il se fait passer pour Ushimitsu Kozo Robin Hood. Il se laisse exécuter en riant par Orochi pour cacher plan.",
+    color: "#FDE68A",
+    image: "/images/yasuie.jpg"
+  },
+
+  {
+    name: "Higuma",
+    epithet: "Bear Mountain Bandit",
+    crew: "Higuma Bandits",
+    role: "Leader",
+    haki: { observation: true },
+    techniques: [
+      { name: "Bandit Threat", description: "Menace avec sabre, jette Luffy à mer.", type: "Other", emoji: "🐻" },
+    ],
+    description: "Bandit qui a poussé Shanks à perdre bras.",
+    story: "Bandit montagne qui provoque Shanks à Foosha. Il jette Luffy à mer et se fait dévorer par Seigneur Côte, ce qui fait Shanks perdre bras pour sauver Luffy. Déclencheur du rêve Luffy.",
+    color: "#78350F",
+    image: "/images/higuma.jpg"
+  },
+
+  {
+    name: "Makino",
+    epithet: "Barmaid of Foosha",
+    crew: "Foosha Village",
+    role: "Bartender",
+    haki: { observation: true },
+    techniques: [
+      { name: "Sake Serve", description: "Sert sake aux pirates.", type: "Other", emoji: "🍶" },
+    ],
+    description: "Serveuse bar Foosha, amie Shanks et Luffy.",
+    story: "Barmaid Foosha qui a connu Luffy bébé et Shanks. Elle a enfant avec Shanks? Oda a mis enfant à côté d'elle fin Wano.",
+    color: "#F472B6",
+    image: "/images/makino.jpg"
+  },
+
+  {
+    name: "Aisa",
+    epithet: "Mantra Girl",
+    crew: "Shandia / Skypiea",
+    role: "Mantra User",
+    haki: { observation: true, observationAdvanced: true },
+    techniques: [
+      { name: "Mantra - Advanced Observation", description: "Née avec Haki Observation avancé.", type: "Haki", emoji: "👁️" },
+    ],
+    description: "Petite fille Shandia née avec mantra ultra puissant.",
+    story: "Fille Shandia 10 ans née avec Mantra qui entend voix mourir d'Enel. Elle sauve Gan Fall et aide Luffy.",
+    color: "#FDE68A",
+    image: "/images/aisa.jpg"
+  },
+
+  {
+    name: "Laki",
+    epithet: "Shandia Warrior",
+    crew: "Shandia Warriors",
+    role: "Warrior",
+    haki: { observation: true },
+    techniques: [
+      { name: "Bazooka Burn", description: "Bazooka qui brûle.", type: "Gun", emoji: "🔫" },
+    ],
+    description: "Guerrière Shandia, amie Wyper.",
+    story: "Guerrière Shandia qui combat Enel avec Wyper.",
+    color: "#F472B6",
+    image: "/images/laki.jpg"
+  },
+
+  {
+    name: "Conis",
+    epithet: "Angel of Skypiea",
+    crew: "Skypiea",
+    role: "Waitress / Guide",
+    haki: { observation: true },
+    techniques: [
+      { name: "Angel Flute", description: "Joue flûte et guide.", type: "Other", emoji: "🎶" },
+    ],
+    description: "Ange Skypiea qui aide Luffy contre Enel.",
+    story: "Fille Skypiea qui aide Luffy au début avec son père Pagaya.",
+    color: "#FDE68A",
+    image: "/images/conis.jpg"
+  },
+
+  {
+    name: "Satori",
+    epithet: "Ordeal of Balls",
+    crew: "Enel's Army - Priests",
+    role: "Priest",
+    haki: { observation: true },
+    techniques: [
+      { name: "Ordeal of Balls - Surprise", description: "Boule surprise qui explose.", type: "Other", emoji: "⚪" },
+    ],
+    description: "Prêtre Enel ordeal boules surprises.",
+    story: "Prêtre Enel qui fait Ordeal of Balls contre Luffy, Zoro, Sanji. Battu par Luffy.",
+    color: "#FBBF24",
+    image: "/images/satori.jpg"
+  },
+
+  {
+    name: "Paulie",
+    epithet: "The Shipwright",
+    crew: "Galley-La Company",
+    role: "Vice President - Shipwright",
+    haki: { observation: true, armament: true },
+    techniques: [
+      { name: "Rope Action: Round, Bind, Lash", description: "Technique corde qui lie et fouette.", type: "Other", emoji: "🪢" },
+    ],
+    description: "Charpentier vice-président Galley-La, cordu.",
+    story: "Vice-président Galley-La, charpentier le plus pervers mais fort corde. Ami Iceburg et Franky.",
+    color: "#0EA5E9",
+    image: "/images/paulie.jpg"
+  },
+
+  {
+    name: "Kokoro",
+    epithet: "Mermaid Grandma",
+    crew: "Tom's Workers / Sea Train - Former",
+    role: "Secretary / Mermaid",
+    haki: { observation: true },
+    techniques: [
+      { name: "Mermaid Secret", description: "Sirène cachée qui boit alcool.", type: "Other", emoji: "🧜‍♀️" },
+    ],
+    description: "Secrétaire Tom sirène cachée grand-mère Chimney.",
+    story: "Secrétaire Tom, en fait sirène qui cache queue et boit saké. Grand-mère Chimney.",
+    color: "#F472B6",
+    image: "/images/kokoro.jpg"
+  },
+
+  {
+    name: "Chimney",
+    epithet: "The Cat Lover",
+    crew: "Galley-La / Tom's Workers Family",
+    role: "Granddaughter of Kokoro",
+    haki: { observation: true },
+    techniques: [
+      { name: "Cat Gonbe Command", description: "Commande chat Gonbe.", type: "Other", emoji: "🐱" },
+    ],
+    description: "Petite fille de Kokoro avec chat Gonbe.",
+    story: "Petite fille 10 ans de Kokoro avec chat Gonbe. Elle voyage avec Straw Hats Water 7 et Enies Lobby cachée dans Rocketman train.",
+    color: "#FDE68A",
+    image: "/images/chimney.jpg"
+  },
+
+  {
+    name: "Kalifa",
+    epithet: "Sexual Harassment",
+    crew: "CP9 / CP0 (Former)",
+    role: "Agent - Secretary",
+    devilFruit: { name: "Awa Awa no Mi", type: "Paramecia", description: "Bubble-Bubble Fruit - Creates bubbles that wash away strength." },
+    haki: { observation: true, armament: true },
+    techniques: [
+      { name: "Golden Hour - Bubble", description: "Bulle qui lave force.", type: "Devil Fruit", emoji: "🫧" },
+    ],
+    description: "Secrétaire CP9 sexy harcèlement bulle.",
+    story: "Secrétaire Iceburg CP9 infiltrée, Awa Awa qui fait bulles qui enlèvent force. Battue par Nami.",
+    color: "#F9A8D4",
+    image: "/images/kalifa.jpg"
+  },
+
+  {
+    name: "Blueno",
+    epithet: "Bull",
+    crew: "CP9 / CP0",
+    role: "Agent - Bartender",
+    devilFruit: { name: "Doa Doa no Mi", type: "Paramecia", description: "Door-Door Fruit - Creates doors anywhere." },
+    haki: { observation: true, armament: true },
+    techniques: [
+      { name: "Doa Doa - Air Door", description: "Ouvre porte dans air.", type: "Devil Fruit", emoji: "🚪" },
+    ],
+    description: "Barman CP9 porte qui ouvre porte dans air.",
+    story: "Barman CP9 Water 7 qui a Doa Doa porte. Battu par Luffy Gear 2.",
+    color: "#6B7280",
+    image: "/images/blueno.jpg"
+  },
+
+  {
+    name: "Kumadori",
+    epithet: "Yoyoi",
+    crew: "CP9",
+    role: "Agent",
+    haki: { observation: true, armament: true },
+    techniques: [
+      { name: "Yoyoi - Hair Control", description: "Cheveux qui bougent comme mains.", type: "Other", emoji: "💇‍♂️" },
+    ],
+    description: "CP9 cheveux qui bougent, yoyoi.",
+    story: "CP9 avec cheveux qui bougent comme mains, dit yoyoi. Battu par Chopper Monster Point.",
+    color: "#F472B6",
+    image: "/images/kumadori.jpg"
+  },
+
+  {
+    name: "Fukurou",
+    epithet: "The Silent Owl",
+    crew: "CP9",
+    role: "Agent - Info Man",
+    haki: { observation: true },
+    techniques: [
+      { name: "Chapapa - Zipper Mouth", description: "Fermeture éclair bouche qui dit secrets.", type: "Other", emoji: "🤐" },
+    ],
+    description: "Hibou rond qui dit secrets avec zip bouche.",
+    story: "CP9 gros hibou avec fermeture éclair bouche qui dit secrets. Battu par Franky.",
+    color: "#FBBF24",
+    image: "/images/fukurou.jpg"
+  },
+
+  {
+    name: "Absalom",
+    epithet: "Invisible Man - Former",
+    crew: "Thriller Bark Pirates / Former",
+    role: "General Zombie - Former",
+    devilFruit: { name: "Suke Suke no Mi (Former)", type: "Paramecia", description: "Former Clear-Clear Fruit user." },
+    haki: { observation: true },
+    techniques: [
+      { name: "Invisible - Suke Suke (Former)", description: "Devenait invisible.", type: "Devil Fruit", emoji: "👻" },
+    ],
+    description: "Homme invisible Thriller Bark tué par Shiryu.",
+    story: "Général zombie Thriller Bark invisible Suke Suke. Voulait épouser Nami. Tué par Shiryu qui vole fruit.",
+    color: "#1F2937",
+    image: "/images/absalom.jpg"
+  },
+
+  {
+    name: "Dr. Hogback",
+    epithet: "The Genius Surgeon",
+    crew: "Thriller Bark Pirates",
+    role: "Doctor",
+    haki: { observation: true },
+    techniques: [
+      { name: "Zombie Surgery", description: "Chirurgie qui répare zombies.", type: "Other", emoji: "🧟‍♂️" },
+    ],
+    description: "Chirurgien génie qui crée zombies avec Moria.",
+    story: "Docteur génie qui crée Oars géant zombie avec ombre Luffy. Battu par Chopper.",
+    color: "#6B7280",
+    image: "/images/hogback.jpg"
+  },
+
+  {
+    name: "Hody Jones",
+    epithet: "The White Shark",
+    crew: "New Fish-Man Pirates",
+    role: "Captain",
+    haki: { observation: true, armament: true },
+    techniques: [
+      { name: "Energy Steroid - EsEs", description: "Pilule EsEs qui double force.", type: "Other", emoji: "💊" },
+    ],
+    description: "Homme-poisson suprématiste qui hait humains.",
+    story: "Fish-Man qui hait humains, prend EsEs stéroïdes. Tente coup d'état Fish-Man Island. Battu par Luffy et Jinbe.",
+    color: "#F87171",
+    image: "/images/hody.jpg"
+  },
+
+  {
+    name: "Vander Decken IX",
+    epithet: "The Flying Dutchman",
+    crew: "Flying Pirates / Decken Pirates",
+    role: "Captain",
+    devilFruit: { name: "Mato Mato no Mi", type: "Paramecia", description: "Mark-Mark Fruit - Marks target." },
+    haki: { observation: true },
+    techniques: [
+      { name: "Mato Mato - Mark", description: "Marque Shirahoshi, hache vole vers elle.", type: "Devil Fruit", emoji: "🎯" },
+    ],
+    description: "Homme-poisson qui harcèle Shirahoshi depuis 10 ans.",
+    story: "Capitaine Flying Dutchman qui a Mato Mato qui marque cible. Harcèle Shirahoshi amoureux fou. Battu par Luffy.",
+    color: "#0E7490",
+    image: "/images/decken.jpg"
+  },
+
+  {
+    name: "Wadatsumi",
+    epithet: "The Giant Monk",
+    crew: "New Fish-Man Pirates / Former Flying Pirates",
+    role: "Giant Puffer Fish-Man",
+    haki: { observation: true },
+    techniques: [
+      { name: "Puffer Inflation", description: "Gonfle comme ballon géant.", type: "Other", emoji: "🐡" },
+    ],
+    description: "Poisson globe géant qui gonfle.",
+    story: "Géant poisson globe Flying Pirates Decken, puis allié Hody. Après Fish-Man Island devient allié Sun Pirates.",
+    color: "#FDE68A",
+    image: "/images/wadatsumi.jpg"
+  },
+
+  {
+    name: "Otohime",
+    epithet: "The Queen of Fish-Man Island",
+    crew: "Ryugu Kingdom",
+    role: "Former Queen",
+    haki: { observation: true, observationAdvanced: true },
+    techniques: [
+      { name: "Kenbunshoku Advanced", description: "Lit émotions.", type: "Haki", emoji: "👁️" },
+    ],
+    description: "Reine Fish-Man qui prêchait cohabitation, mère Shirahoshi.",
+    story: "Reine Otohime qui voulait cohabitation humains poissons, faisait pétition. Tuée par Hody Jones. Mère Shirahoshi.",
+    color: "#F9A8D4",
+    image: "/images/otohime.jpg"
+  },
+
+  {
+    name: "Trebol",
+    epithet: "The Sticky Man",
+    crew: "Donquixote Pirates",
+    role: "Elite Officer - Club",
+    devilFruit: { name: "Beta Beta no Mi", type: "Paramecia", description: "Sticky-Sticky Fruit - Controls sticky mucus." },
+    haki: { observation: true, armament: true },
+    techniques: [
+      { name: "Beta Beta - Mucus Chain", description: "Mucus collant qui colle.", type: "Devil Fruit", emoji: "🤢" },
+    ],
+    description: "Homme morve collante qui a donné fruit à Doflamingo.",
+    story: "Elite Donquixote qui a donné Ito Ito à Doflamingo enfant et l'a élevé comme roi. Nez qui coule toujours.",
+    color: "#A3A3A3",
+    image: "/images/trebol.jpg"
+  },
+
+  {
+    name: "Dellinger",
+    epithet: "The Fighter - Half Fish-Man",
+    crew: "Donquixote Pirates",
+    role: "Officer - Diamante Army",
+    haki: { observation: true, armament: true },
+    techniques: [
+      { name: "High Heel Kick", description: "Talon haut qui tranche.", type: "Other", emoji: "👠" },
+    ],
+    description: "Mi homme-poisson avec talons aiguilles qui tranche.",
+    story: "Officier Diamante mi homme-poisson avec talons qui tranche. Très jeune 16 ans. Battu par Hakuba Cavendish.",
+    color: "#F472B6",
+    image: "/images/dellinger.jpg"
+  },
+
+  {
+    name: "Gladius",
+    epithet: "The Pop Man",
+    crew: "Donquixote Pirates",
+    role: "Officer - Pica Army",
+    devilFruit: { name: "Pamu Pamu no Mi", type: "Paramecia", description: "Pop-Pop Fruit - Inflates anything to make it explode." },
+    haki: { observation: true, armament: true },
+    techniques: [
+      { name: "Pamu Pamu - Pop", description: "Gonfle objet jusqu'à explosion.", type: "Devil Fruit", emoji: "💥" },
+    ],
+    description: "Homme qui fait gonfler et exploser tout.",
+    story: "Officier Pica qui fait gonfler Pamu Pamu. Battu par Bartolomeo.",
+    color: "#6B7280",
+    image: "/images/gladius.jpg"
+  },
+
+  {
+    name: "Lao G",
+    epithet: "The Old Man - G",
+    crew: "Donquixote Pirates",
+    role: "Officer - Diamante Army",
+    haki: { observation: true, armament: true, armamentAdvanced: true },
+    techniques: [
+      { name: "G - No Kokuin", description: "Boxe qui préserve douleur puis libère.", type: "Martial Arts", emoji: "👊" },
+    ],
+    description: "Vieil homme qui combat en préservant douleur.",
+    story: "Vieux officier Diamante qui a G No Kokuin qui sauvegarde douleur et âge puis libère. Battu par Sai et Boo.",
+    color: "#78350F",
+    image: "/images/laog.jpg"
+  },
+
+  {
+    name: "Senor Pink",
+    epithet: "The Hard Boiled Man",
+    crew: "Donquixote Pirates",
+    role: "Officer - Diamante Army",
+    devilFruit: { name: "Sui Sui no Mi", type: "Paramecia", description: "Swim-Swim Fruit - Swims through ground and walls." },
+    haki: { observation: true, armament: true },
+    techniques: [
+      { name: "Sui Sui - Swim Ground", description: "Nage dans sol et murs comme eau.", type: "Devil Fruit", emoji: "🏊‍♂️" },
+    ],
+    description: "Homme dur à cuire qui nage dans sol, histoire triste bébé.",
+    story: "Officier Diamante dur qui nage dans sol Sui Sui. Histoire émouvante femme Lucian dans coma et bébé mort, il porte costume bébé pour elle. Battu par Franky.",
+    color: "#F59E0B",
+    image: "/images/senorpink.jpg"
+  },
+
+  {
+    name: "Machvise",
+    epithet: "The 10 Ton Man",
+    crew: "Donquixote Pirates",
+    role: "Officer - Diamante Army",
+    devilFruit: { name: "Ton Ton no Mi", type: "Paramecia", description: "Ton-Ton Fruit - Changes weight 10 tons." },
+    haki: { observation: true, armament: true },
+    techniques: [
+      { name: "10 Ton Vise", description: "Devient 10 tonnes puis 1000 tonnes écrase.", type: "Devil Fruit", emoji: "⚖️" },
+    ],
+    description: "Gros qui devient 10 tonnes puis 1000 tonnes.",
+    story: "Officier Diamante gros qui devient lourd Ton Ton. Battu par Hajrudin qui le soulève malgré 1000 tonnes.",
+    color: "#A3A3A3",
+    image: "/images/machvise.jpg"
+  },
+
+  {
+    name: "Chiffon",
+    epithet: "Wife of Bege - Sister of Lola",
+    crew: "Fire Tank Pirates / Big Mom Pirates (Former)",
+    role: "Wife - 22nd Daughter of Big Mom",
+    haki: { observation: true },
+    techniques: [
+      { name: "Cake Baking Support", description: "Aide à faire gâteau qui calme Big Mom.", type: "Cooking", emoji: "🎂" },
+    ],
+    description: "Fille Big Mom sœur jumelle Lola, femme Bege.",
+    story: "22e fille Big Mom jumelle Lola, femme Bege. Elle aide Sanji à faire gâteau qui arrête Big Mom Whole Cake.",
+    color: "#F472B6",
+    image: "/images/chiffon.jpg"
+  },
+
+  {
+    name: "Lola",
+    epithet: "The Runaway Daughter",
+    crew: "Thriller Bark Pirates (Former) / Big Mom Pirates (Former)",
+    role: "Pirate Captain - Former",
+    haki: { observation: true },
+    techniques: [
+      { name: "Chocolate Proposal", description: "Propose mariage à tout le monde.", type: "Other", emoji: "🍫" },
+    ],
+    description: "Fille Big Mom qui a fui mariage Elbaf et a rencontré Thriller Bark.",
+    story: "Fille Big Mom 23e qui a fui mariage Elbaf avec Loki prince géant, ce qui a cassé alliance Elbaf et Big Mom. Elle devient pirate Thriller Bark et amie Nami avec Vivre Card Big Mom qu'elle donne à Nami.",
+    color: "#F472B6",
+    image: "/images/lola.jpg"
+  },
+
+  {
+    name: "Sicilian",
+    epithet: "Musketeer Lion",
+    crew: "Mink Tribe",
+    role: "Musketeer - Leader",
+    haki: { observation: true, armament: true },
+    techniques: [
+      { name: "Musketeer Sword - Lion Slash", description: "Épée mousquetaire lion.", type: "Sword", emoji: "🦁" },
+    ],
+    description: "Lion Musketeer chef Minks.",
+    story: "Chef Mousquetaires Inuarashi, lion qui combat avec épée. Sulong fort. Il a combattu Jack à Zou.",
+    color: "#FDE68A",
+    image: "/images/sicilian.jpg"
+  },
+
+  {
+    name: "Roddy",
+    epithet: "The Bull Musketeer",
+    crew: "Mink Tribe",
+    role: "Musketeer",
+    haki: { observation: true, armament: true },
+    techniques: [
+      { name: "Bull Horn", description: "Corne taureau charge.", type: "Other", emoji: "🐂" },
+    ],
+    description: "Taureau Musketeer Mink.",
+    story: "Mousquetaire taureau Mink qui combat Jack. Sulong.",
+    color: "#78350F",
+    image: "/images/roddy.jpg"
+  },
+
+  {
+    name: "Blackback",
+    epithet: "Gorilla Musketeer",
+    crew: "Mink Tribe",
+    role: "Musketeer",
+    haki: { observation: true, armament: true },
+    techniques: [
+      { name: "Gorilla Punch", description: "Poing gorille.", type: "Other", emoji: "🦍" },
+    ],
+    description: "Gorille Musketeer Mink.",
+    story: "Mousquetaire gorille Mink, combat Jack. Sulong.",
+    color: "#1F2937",
+    image: "/images/blackback.jpg"
+  },
+
+  {
+    name: "Guernica",
+    epithet: "Agent of CP0 - Masked",
+    crew: "CP0",
+    role: "Agent - Masked",
+    haki: { observation: true, armament: true, armamentAdvanced: true },
+    techniques: [
+      { name: "Rokushiki - Shigan", description: "Doigt pistolet CP0.", type: "Other", emoji: "👉" },
+    ],
+    description: "CP0 masqué qui a pris photo Luffy Gear 5 et trahi Drake.",
+    story: "Agent CP0 masqué qui a pris photo Luffy Gear 5 pour Gorosei, et a tiré sur Drake à Wano.",
+    color: "#1F2937",
+    image: "/images/guernica.jpg"
+  },
+
+  {
+    name: "Maha",
+    epithet: "Agent of CP0",
+    crew: "CP0",
+    role: "Agent",
+    haki: { observation: true, armament: true },
+    techniques: [
+      { name: "CP0 Assassination", description: "Assassin CP0 silencieux.", type: "Other", emoji: "🔪" },
+    ],
+    description: "CP0 grand qui accompagne Guernica.",
+    story: "Agent CP0 grand avec Guernica et Joseph à Wano. Tué par Izou.",
+    color: "#6B7280",
+    image: "/images/maha.jpg"
+  },
+
+  {
+    name: "Loki",
+    epithet: "The Accursed Prince of Elbaf",
+    crew: "Elbaf Kingdom",
+    role: "Prince of Elbaf (Imprisoned)",
+    bounty: "2,600,000,000",
+    devilFruit: { name: "Legendary Devil Fruit of Elbaf (Alleged)", type: "Zoan", description: "Alleged legendary fruit that Loki allegedly ate by killing his father King Harald." },
+    haki: { observation: true, armament: true, conqueror: true, conquerorAdvanced: true },
+    techniques: [
+      { name: "Hammer Ragnir - Thunder God", description: "Marteau Ragnir qui invoque foudre.", type: "Other", emoji: "🔨" },
+    ],
+    description: "Prince Elbaf maudit 2.6B, a tué père pour fruit légendaire.",
+    story: "Prince Elbaf maudit, fils Harald, 2.6B prime spéciale Shanks l'a capturé? Enchaîné au plus bas Elbaf avec chaînes Seastone géantes et bêtes. Il veut épouser Lola? Non, fiancé Lola refusée. Il demande Luffy libère.",
+    color: "#6B7280",
+    image: "/images/loki.jpg"
+  },
+
+  {
+    name: "Gunko",
+    epithet: "Holy Knights - Arrow Girl",
+    crew: "Holy Knights / World Government",
+    role: "Holy Knight",
+    devilFruit: { name: "Aro Aro no Mi", type: "Paramecia", description: "Arrow-Arrow Fruit - Creates arrows that guide and control." },
+    haki: { observation: true, armament: true, conqueror: true },
+    techniques: [
+      { name: "Aro Aro - Arrow Guide", description: "Flèches qui guident et forcent suivre.", type: "Devil Fruit", emoji: "🏹" },
+    ],
+    description: "Holy Knights jeune fille avec flèches qui contrôlent.",
+    story: "Holy Knights nouvelle Elbaf arc avec Shamrock et Sommers. Elle kidnappe Colon enfant de Ripley et Gaban?",
+    color: "#000000",
+    image: "/images/gunko.jpg"
+  },
+
+  {
+    name: "Sommers",
+    epithet: "Holy Knights - Thorn Man",
+    crew: "Holy Knights",
+    role: "Holy Knight",
+    devilFruit: { name: "Iba Iba no Mi", type: "Paramecia", description: "Thorn-Thorn Fruit - Creates invisible thorns of love that hurt when love felt." },
+    haki: { observation: true, armament: true, conqueror: true },
+    techniques: [
+      { name: "Iba Iba - Thorn Love", description: "Épines invisibles qui piquent quand enfant aime parent.", type: "Devil Fruit", emoji: "🌹" },
+    ],
+    description: "Holy Knights épines qui piquent enfants Elbaf.",
+    story: "Holy Knights Elbaf qui fait épines amour invisible qui font souffrir enfants Elbaf quand ils aiment. Très cruel.",
+    color: "#DC2626",
+    image: "/images/sommers.jpg"
+  },
+
+  {
+    name: "Killingham",
+    epithet: "Holy Knights - Kirin Man",
+    crew: "Holy Knights",
+    role: "Holy Knight",
+    devilFruit: { name: "Ryu Ryu no Mi, Model: Kirin", type: "Zoan", description: "Mythical Zoan Kirin - Dream monster, creates nightmare monsters from dreams." },
+    haki: { observation: true, armament: true },
+    techniques: [
+      { name: "Kirin Nightmare - MMA", description: "Crée monstres de cauchemars à partir rêves enfants Elbaf.", type: "Devil Fruit", emoji: "🦄" },
+    ],
+    description: "Holy Knights Kirin qui fait cauchemars monstres MMA à Elbaf.",
+    story: "Holy Knights Kirin mythique qui endort enfants Elbaf et fait monstres MMA qui attaquent Elbaf depuis cauchemars enfants.",
+    color: "#FDE68A",
+    image: "/images/killingham.jpg"
+  },
+
+  {
+    name: "Wang Zhi",
+    epithet: "Ochoku - One of Rocks Pirates Treasures",
+    crew: "Former Rocks Pirates / Hachinosu Pirate",
+    role: "Former Rocks Pirate - Ruler of Hachinosu (Former)",
+    haki: { observation: true, armament: true, conqueror: true },
+    techniques: [
+      { name: "Ochoku - Treasure of Hachinosu", description: "Un des trésors Rocks avec Silver Axe, John.", type: "Other", emoji: "💰" },
+    ],
+    description: "Ex Rocks trésor Hachinosu, battu par Teach.",
+    story: "Ex Rocks membre, un des trésors avec Silver Axe et John. Il régnait Hachinosu avant Teach le batte pour devenir roi Hachinosu.",
+    color: "#78350F",
+    image: "/images/ochoku.jpg"
+  },
+
+  {
+    name: "Silver Axe",
+    epithet: "One of Rocks Pirates Treasures",
+    crew: "Former Rocks Pirates",
+    role: "Former Rocks Pirate",
+    haki: { observation: true, armament: true, conqueror: true },
+    techniques: [
+      { name: "Silver Axe Slash", description: "Hache argent tranche.", type: "Sword", emoji: "🪓" },
+    ],
+    description: "Ex Rocks trésor avec Ochoku.",
+    story: "Membre Rocks, un des trésors Hachinosu avec Ochoku et John. Mentionné par Sengoku.",
+    color: "#A3A3A3",
+    image: "/images/silveraxe.jpg"
+  },
+
+  {
+    name: "Captain John",
+    epithet: "One of Rocks Pirates Treasures",
+    crew: "Former Rocks Pirates / Thriller Bark Zombie (Former)",
+    role: "Former Rocks Pirate / Zombie General",
+    haki: { observation: true },
+    techniques: [
+      { name: "Zombie John - Treasure Mark", description: "Zombie général Thriller Bark avec trésor sur lui.", type: "Other", emoji: "🧟‍♂️" },
+    ],
+    description: "Ex Rocks, zombie général Thriller Bark.",
+    story: "Ex Rocks membre trésor, devenu zombie général Thriller Bark avec trésor marqué sur corps.",
+    color: "#4B5563",
+    image: "/images/john.jpg"
+  },
+
+  {
+    name: "Buckingham Stussy",
+    epithet: "Miss Bakkin - Self-proclaimed Whitebeard's Lover",
+    crew: "Former Rocks Pirates / MADS? / Cross Guild? / Mother of Weevil",
+    role: "Self-proclaimed Lover of Whitebeard",
+    haki: { observation: true },
+    techniques: [
+      { name: "Claim Whitebeard Treasure", description: "Prétend être amante Whitebeard et mère Weevil pour héritage.", type: "Other", emoji: "💋" },
+    ],
+    description: "Mère Weevil, ex Rocks? Prétend amante Whitebeard.",
+    story: "Miss Bakkin se dit amante Whitebeard et mère Weevil clone? En fait elle est originale de Stussy clone MADS.",
+    color: "#F9A8D4",
+    image: "/images/bakkin.jpg"
+  },
+
+  {
+    name: "Shachi",
+    epithet: "Heart Pirates Engineer",
+    crew: "Heart Pirates",
+    role: "Engineer",
+    haki: { observation: true },
+    techniques: [
+      { name: "Submarine Repair", description: "Répare Polar Tang avec Penguin.", type: "Other", emoji: "🔧" },
+    ],
+    description: "Ingénieur Heart Pirates, ami Law depuis North Blue.",
+    story: "Membre Heart Pirates, ingénieur qui répare sous-marin. A suivi Law depuis enfance après Corazon mort.",
+    color: "#15803D",
+    image: "/images/shachi.jpg"
+  },
+
+  {
+    name: "Penguin",
+    epithet: "Heart Pirates Lookout",
+    crew: "Heart Pirates",
+    role: "Lookout",
+    haki: { observation: true },
+    techniques: [
+      { name: "Lookout Duty", description: "Surveille avec jumelles, repère ennemis.", type: "Other", emoji: "🔭" },
+    ],
+    description: "Vigie Heart Pirates, porte bonnet pingouin.",
+    story: "Membre Heart Pirates, vigie avec bonnet pingouin. Ami Law depuis jeune, avec Shachi.",
+    color: "#15803D",
+    image: "/images/penguin.jpg"
+  },
+
+  {
+    name: "Jean Bart",
+    epithet: "The Former Slave Captain",
+    crew: "Heart Pirates",
+    role: "Former Slave - Giant Muscle",
+    haki: { observation: true },
+    techniques: [
+      { name: "Giant Muscle Strength", description: "Force géante ex esclave qui casse chaînes.", type: "Other", emoji: "💪" },
+    ],
+    description: "Ex esclave géant libéré par Law à Sabaody, rejoint Heart.",
+    story: "Ex capitaine esclave libéré par Law à Sabaody Auction. Géant muscle qui rejoint Heart Pirates par gratitude.",
+    color: "#6B7280",
+    image: "/images/jeanbart.jpg"
+  },
+
+  {
+    name: "Baby 5",
+    epithet: "The Arms Girl",
+    crew: "Former Donquixote Pirates / Happo Navy (Wife of Sai)",
+    role: "Former Officer - Pica Army / Wife",
+    devilFruit: { name: "Buki Buki no Mi", type: "Paramecia", description: "Arms-Arms Fruit - Turns body into weapons." },
+    haki: { observation: true },
+    techniques: [
+      { name: "Buki Buki - Arms Transform", description: "Corps devient épée, fusil, bazooka.", type: "Devil Fruit", emoji: "🔫" },
+    ],
+    description: "Fille qui devient arme, a besoin d'être utile, épouse Sai.",
+    story: "Officier Donquixote Pica qui devient arme Buki Buki. Elle a besoin pathologique d'être utile, Doflamingo exploite. Sai la sauve en demandant aide et l'épouse Happo Navy.",
+    color: "#F472B6",
+    image: "/images/baby5.jpg"
+  },
+
+
 ];
