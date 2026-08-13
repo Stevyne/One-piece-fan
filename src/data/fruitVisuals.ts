@@ -14,7 +14,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Hito Hito no Mi, Model: Nika": {
     emoji: "☀️", color: "#FFD700", element: "sun",
     particles: ["✨", "🌟", "⭐", "💫", "🔆", "🧦"],
-    image: "/images/fdd/hito-hito-nika.jpg",
+    image: "/images/fruits/hito-hito-nika.jpg",
     detailedDescription: "Le fruit le plus ridicule et le plus libre du monde. Autrefois appelé Gomu Gomu no Mi, c'est en réalité le fruit du Dieu Soleil Nika, dieu de la libération qui apporte joie et sourires. Éveil rend tout caoutchouteux autour, combat en mode cartoon Looney Tunes.",
     firstAppearance: "Chapitre 1 / Épisode 1 (comme Gomu Gomu), Révélation Chapitre 1044",
     typeDetail: "sun",
@@ -23,7 +23,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Hito Hito no Mi": {
     emoji: "🧑", color: "#EC4899", element: "human",
     particles: ["💫", "✨", "⭐"],
-    image: "/images/fdd/hito-hito-no-mi.jpg",
+    image: "/images/fruits/hito-hito-no-mi.jpg",
     detailedDescription: "Fruit du démon type human qui donne pouvoir unique lié à human. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "human",
@@ -32,7 +32,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Hana Hana no Mi": {
     emoji: "🌸", color: "#EC4899", element: "flower",
     particles: ["🌺", "🌹", "🌷", "💐", "🪻"],
-    image: "/images/fdd/hana-hana.jpg",
+    image: "/images/fruits/hana-hana.jpg",
     detailedDescription: "Fleurit parties du corps partout, même géantes. Robin peut faire corps démoniaque éveillé Demonio Fleur avec ailes.",
     firstAppearance: "Chapitre 114",
     typeDetail: "flower",
@@ -41,7 +41,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Yomi Yomi no Mi": {
     emoji: "💀", color: "#6B7280", element: "soul",
     particles: ["👻", "💀", "☠️", "🕯️"],
-    image: "/images/fdd/yomi-yomi-no-mi.jpg",
+    image: "/images/fruits/yomi-yomi-no-mi.jpg",
     detailedDescription: "Fruit du démon type soul qui donne pouvoir unique lié à soul. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "soul",
@@ -50,7 +50,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Yami Yami no Mi & Gura Gura no Mi": {
     emoji: "🌑", color: "#1F2937", element: "darkness",
     particles: ["🌑", "🕳️", "💥", "⚡", "🌋"],
-    image: "/images/fdd/yami-yami-no-mi-&-gura-gura-no-mi.jpg",
+    image: "/images/fruits/yami-yami-no-mi-&-gura-gura-no-mi.jpg",
     detailedDescription: "Fruit du démon type darkness qui donne pouvoir unique lié à darkness. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "darkness",
@@ -59,7 +59,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Soru Soru no Mi": {
     emoji: "👻", color: "#BE185D", element: "soul",
     particles: ["👻", "💫", "✨", "🕯️", "🫧"],
-    image: "/images/fdd/soru-soru.jpg",
+    image: "/images/fruits/soru-soru.jpg",
     detailedDescription: "Big Mom vole fragments d'âme et crée Homies vivants. Si peur, vole durée de vie entière.",
     firstAppearance: "Chapitre 651",
     typeDetail: "soul",
@@ -68,7 +68,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Uo Uo no Mi, Model: Seiryu": {
     emoji: "🐉", color: "#7C3AED", element: "dragon",
     particles: ["🐉", "🔥", "⚡", "💎", "🌀"],
-    image: "/images/fdd/uo-uo-no-mi-model-seiryu.jpg",
+    image: "/images/fruits/uo-uo-no-mi-model-seiryu.jpg",
     detailedDescription: "Fruit du démon type dragon qui donne pouvoir unique lié à dragon. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "dragon",
@@ -77,7 +77,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Ope Ope no Mi": {
     emoji: "🔪", color: "#15803D", element: "operation",
     particles: ["🔪", "💊", "🩺", "⚛️", "🔵"],
-    image: "/images/fdd/ope-ope.jpg",
+    image: "/images/fruits/ope-ope.jpg",
     detailedDescription: "Fruit ultime qui vaut 5 milliards, peut donner jeunesse éternelle via opération immortalité qui tue utilisateur. Law fait ROOM où il est dieu chirurgien.",
     firstAppearance: "Chapitre 505",
     typeDetail: "operation",
@@ -86,7 +86,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Jiki Jiki no Mi": {
     emoji: "🧲", color: "#DC2626", element: "magnet",
     particles: ["🧲", "⚡", "🔩", "⚙️", "🫧"],
-    image: "/images/fdd/jiki-jiki-no-mi.jpg",
+    image: "/images/fruits/jiki-jiki-no-mi.jpg",
     detailedDescription: "Fruit du démon type magnet qui donne pouvoir unique lié à magnet. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "magnet",
@@ -95,7 +95,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Mero Mero no Mi": {
     emoji: "❤️", color: "#DB2777", element: "love",
     particles: ["❤️", "💕", "💖", "💗", "💝"],
-    image: "/images/fdd/mero-mero-no-mi.jpg",
+    image: "/images/fruits/mero-mero-no-mi.jpg",
     detailedDescription: "Fruit du démon type love qui donne pouvoir unique lié à love. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "love",
@@ -104,7 +104,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Suna Suna no Mi": {
     emoji: "🏜️", color: "#92400E", element: "sand",
     particles: ["🏜️", "💨", "🌀", "⏳"],
-    image: "/images/fdd/suna-suna-no-mi.jpg",
+    image: "/images/fruits/suna-suna-no-mi.jpg",
     detailedDescription: "Fruit du démon type sand qui donne pouvoir unique lié à sand. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "sand",
@@ -113,7 +113,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Ito Ito no Mi": {
     emoji: "🕸️", color: "#F59E0B", element: "string",
     particles: ["🕸️", "🧵", "✨", "💫"],
-    image: "/images/fdd/ito-ito-no-mi.jpg",
+    image: "/images/fruits/ito-ito-no-mi.jpg",
     detailedDescription: "Fruit du démon type string qui donne pouvoir unique lié à string. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "string",
@@ -122,7 +122,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Magu Magu no Mi": {
     emoji: "🌋", color: "#DC2626", element: "magma",
     particles: ["🌋", "🔥", "💥", "♨️"],
-    image: "/images/fdd/magu-magu-no-mi.jpg",
+    image: "/images/fruits/magu-magu-no-mi.jpg",
     detailedDescription: "Fruit du démon type magma qui donne pouvoir unique lié à magma. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "magma",
@@ -131,7 +131,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Hie Hie no Mi": {
     emoji: "❄️", color: "#3B82F6", element: "ice",
     particles: ["❄️", "🧊", "💎", "💠", "🌨️"],
-    image: "/images/fdd/hie-hie-no-mi.jpg",
+    image: "/images/fruits/hie-hie-no-mi.jpg",
     detailedDescription: "Fruit du démon type ice qui donne pouvoir unique lié à ice. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "ice",
@@ -140,7 +140,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Pika Pika no Mi": {
     emoji: "⚡", color: "#FBBF24", element: "light",
     particles: ["⚡", "✨", "🌟", "💫", "🔆"],
-    image: "/images/fdd/pika-pika-no-mi.jpg",
+    image: "/images/fruits/pika-pika-no-mi.jpg",
     detailedDescription: "Fruit du démon type light qui donne pouvoir unique lié à light. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "light",
@@ -149,7 +149,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Goro Goro no Mi": {
     emoji: "⚡", color: "#FBBF24", element: "lightning",
     particles: ["⚡", "🌩️", "💥", "⚡", "✨"],
-    image: "/images/fdd/goro-goro-no-mi.jpg",
+    image: "/images/fruits/goro-goro-no-mi.jpg",
     detailedDescription: "Fruit du démon type lightning qui donne pouvoir unique lié à lightning. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "lightning",
@@ -158,7 +158,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Moku Moku no Mi": {
     emoji: "💨", color: "#9CA3AF", element: "smoke",
     particles: ["💨", "🌫️", "🫧", "☁️"],
-    image: "/images/fdd/moku-moku-no-mi.jpg",
+    image: "/images/fruits/moku-moku-no-mi.jpg",
     detailedDescription: "Fruit du démon type smoke qui donne pouvoir unique lié à smoke. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "smoke",
@@ -167,7 +167,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Gura Gura no Mi": {
     emoji: "💥", color: "#F8FAFC", element: "quake",
     particles: ["💥", "⚡", "🌋", "🌀", "💢"],
-    image: "/images/fdd/gura-gura.jpg",
+    image: "/images/fruits/gura-gura.jpg",
     detailedDescription: "Paramecia le plus fort, peut détruire monde avec tremblements. Whitebeard l'avait, Teach l'a volé à Marineford en mettant drap noir mystérieux.",
     firstAppearance: "Chapitre 552",
     typeDetail: "quake",
@@ -176,7 +176,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Neko Neko no Mi, Model: Leopard": {
     emoji: "🐆", color: "#F59E0B", element: "leopard",
     particles: ["🐆", "🐾", "⚡", "💫"],
-    image: "/images/fdd/neko-neko-no-mi-model-leopard.jpg",
+    image: "/images/fruits/neko-neko-no-mi-model-leopard.jpg",
     detailedDescription: "Fruit du démon type leopard qui donne pouvoir unique lié à leopard. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "leopard",
@@ -185,7 +185,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Bara Bara no Mi": {
     emoji: "✂️", color: "#EF4444", element: "chop",
     particles: ["✂️", "🧩", "💫", "✨"],
-    image: "/images/fdd/bara-bara-no-mi.jpg",
+    image: "/images/fruits/bara-bara-no-mi.jpg",
     detailedDescription: "Fruit du démon type chop qui donne pouvoir unique lié à chop. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "chop",
@@ -194,7 +194,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Mera Mera no Mi": {
     emoji: "🔥", color: "#F97316", element: "fire",
     particles: ["🔥", "💥", "♨️", "✨", "🌟"],
-    image: "/images/fdd/mera-mera.jpg",
+    image: "/images/fruits/mera-mera.jpg",
     detailedDescription: "Flamme qui brûle. Ace puis Sabo. Sabo combine avec Haki et Ryusoken poing dragon.",
     firstAppearance: "Chapitre 158",
     typeDetail: "fire",
@@ -203,7 +203,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Nikyu Nikyu no Mi": {
     emoji: "🐾", color: "#F9A8D4", element: "paw",
     particles: ["🐾", "💨", "✨", "🌸"],
-    image: "/images/fdd/nikyu-nikyu-no-mi.jpg",
+    image: "/images/fruits/nikyu-nikyu-no-mi.jpg",
     detailedDescription: "Fruit du démon type paw qui donne pouvoir unique lié à paw. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "paw",
@@ -212,7 +212,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Horu Horu no Mi": {
     emoji: "💉", color: "#A78BFA", element: "hormone",
     particles: ["💉", "💊", "✨", "🌈"],
-    image: "/images/fdd/horu-horu-no-mi.jpg",
+    image: "/images/fruits/horu-horu-no-mi.jpg",
     detailedDescription: "Fruit du démon type hormone qui donne pouvoir unique lié à hormone. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "hormone",
@@ -221,7 +221,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Zushi Zushi no Mi": {
     emoji: "🪨", color: "#6B7280", element: "gravity",
     particles: ["🪨", "☄️", "💫", "🌌"],
-    image: "/images/fdd/zushi-zushi-no-mi.jpg",
+    image: "/images/fruits/zushi-zushi-no-mi.jpg",
     detailedDescription: "Fruit du démon type gravity qui donne pouvoir unique lié à gravity. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "gravity",
@@ -230,7 +230,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Mori Mori no Mi": {
     emoji: "🌳", color: "#16A34A", element: "forest",
     particles: ["🌳", "🍃", "🌿", "✨"],
-    image: "/images/fdd/mori-mori-no-mi.jpg",
+    image: "/images/fruits/mori-mori-no-mi.jpg",
     detailedDescription: "Fruit du démon type forest qui donne pouvoir unique lié à forest. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "forest",
@@ -239,7 +239,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Hito Hito no Mi, Model: Daibutsu": {
     emoji: "🪷", color: "#FBBF24", element: "buddha",
     particles: ["🪷", "✨", "🙏", "💛"],
-    image: "/images/fdd/hito-hito-no-mi-model-daibutsu.jpg",
+    image: "/images/fruits/hito-hito-no-mi-model-daibutsu.jpg",
     detailedDescription: "Fruit du démon type buddha qui donne pouvoir unique lié à buddha. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "buddha",
@@ -248,7 +248,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Tori Tori no Mi, Model: Phoenix": {
     emoji: "🦅", color: "#38BDF8", element: "phoenix",
     particles: ["🦅", "🔥", "💙", "✨"],
-    image: "/images/fdd/tori-tori-no-mi-model-phoenix.jpg",
+    image: "/images/fruits/tori-tori-no-mi-model-phoenix.jpg",
     detailedDescription: "Fruit du démon type phoenix qui donne pouvoir unique lié à phoenix. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "phoenix",
@@ -257,7 +257,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Mochi Mochi no Mi": {
     emoji: "🍡", color: "#F472B6", element: "mochi",
     particles: ["🍡", "✨", "💫", "🤍"],
-    image: "/images/fdd/mochi-mochi-no-mi.jpg",
+    image: "/images/fruits/mochi-mochi-no-mi.jpg",
     detailedDescription: "Fruit du démon type mochi qui donne pouvoir unique lié à mochi. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "mochi",
@@ -266,7 +266,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Ryu Ryu no Mi, Model: Pteranodon": {
     emoji: "🦖", color: "#0F172A", element: "pteranodon",
     particles: ["🦖", "🔥", "💨", "🌋"],
-    image: "/images/fdd/ryu-ryu-no-mi-model-pteranodon.jpg",
+    image: "/images/fruits/ryu-ryu-no-mi-model-pteranodon.jpg",
     detailedDescription: "Fruit du démon type pteranodon qui donne pouvoir unique lié à pteranodon. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "pteranodon",
@@ -275,7 +275,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Inu Inu no Mi, Model: Okuchi no Makami": {
     emoji: "🐺", color: "#FDE68A", element: "wolf god",
     particles: ["🐺", "❄️", "✨", "🌙"],
-    image: "/images/fdd/inu-inu-no-mi-model-okuchi-no-makami.jpg",
+    image: "/images/fruits/inu-inu-no-mi-model-okuchi-no-makami.jpg",
     detailedDescription: "Fruit du démon type wolf god qui donne pouvoir unique lié à wolf god. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "wolf god",
@@ -284,7 +284,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Nomi Nomi no Mi": {
     emoji: "🧠", color: "#22D3EE", element: "brain",
     particles: ["🧠", "💡", "✨", "🤖"],
-    image: "/images/fdd/nomi-nomi-no-mi.jpg",
+    image: "/images/fruits/nomi-nomi-no-mi.jpg",
     detailedDescription: "Fruit du démon type brain qui donne pouvoir unique lié à brain. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "brain",
@@ -293,7 +293,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Horo Horo no Mi": {
     emoji: "👻", color: "#EC4899", element: "ghost",
     particles: ["👻", "💀", "🖤", "✨"],
-    image: "/images/fdd/horo-horo-no-mi.jpg",
+    image: "/images/fruits/horo-horo-no-mi.jpg",
     detailedDescription: "Fruit du démon type ghost qui donne pouvoir unique lié à ghost. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "ghost",
@@ -302,7 +302,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Toshi Toshi no Mi": {
     emoji: "⏳", color: "#F472B6", element: "age",
     particles: ["⏳", "👶", "👵", "✨"],
-    image: "/images/fdd/toshi-toshi-no-mi.jpg",
+    image: "/images/fruits/toshi-toshi-no-mi.jpg",
     detailedDescription: "Fruit du démon type age qui donne pouvoir unique lié à age. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "age",
@@ -311,7 +311,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Uo Uo no Mi, Model: Seiryu (Artificial)": {
     emoji: "🐉", color: "#FCA5A5", element: "artificial dragon",
     particles: ["🐉", "🌸", "💫", "✨"],
-    image: "/images/fdd/uo-uo-no-mi-model-seiryu-(artificial).jpg",
+    image: "/images/fruits/uo-uo-no-mi-model-seiryu-(artificial).jpg",
     detailedDescription: "Fruit du démon type artificial dragon qui donne pouvoir unique lié à artificial dragon. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "artificial dragon",
@@ -320,7 +320,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "SMILE (Failed)": {
     emoji: "😿", color: "#6B7280", element: "failed smile",
     particles: ["😹", "💔", "✨"],
-    image: "/images/fdd/smile-(failed).jpg",
+    image: "/images/fruits/smile-(failed).jpg",
     detailedDescription: "Fruit du démon type failed smile qui donne pouvoir unique lié à failed smile. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "failed smile",
@@ -329,7 +329,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Kage Kage no Mi": {
     emoji: "👤", color: "#4B5563", element: "shadow",
     particles: ["👤", "🌑", "👻", "✨"],
-    image: "/images/fdd/kage-kage-no-mi.jpg",
+    image: "/images/fruits/kage-kage-no-mi.jpg",
     detailedDescription: "Fruit du démon type shadow qui donne pouvoir unique lié à shadow. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "shadow",
@@ -338,7 +338,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Bisu Bisu no Mi": {
     emoji: "🍪", color: "#D97706", element: "biscuit",
     particles: ["🍪", "🛡️", "✨"],
-    image: "/images/fdd/bisu-bisu-no-mi.jpg",
+    image: "/images/fruits/bisu-bisu-no-mi.jpg",
     detailedDescription: "Fruit du démon type biscuit qui donne pouvoir unique lié à biscuit. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "biscuit",
@@ -347,7 +347,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Shibo Shibo no Mi": {
     emoji: "🧃", color: "#EC4899", element: "juice",
     particles: ["🧃", "💧", "✨"],
-    image: "/images/fdd/shibo-shibo-no-mi.jpg",
+    image: "/images/fruits/shibo-shibo-no-mi.jpg",
     detailedDescription: "Fruit du démon type juice qui donne pouvoir unique lié à juice. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "juice",
@@ -356,7 +356,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Ryu Ryu no Mi, Model: Brachiosaurus": {
     emoji: "🦕", color: "#EAB308", element: "brachio",
     particles: ["🦕", "💥", "🔥"],
-    image: "/images/fdd/ryu-ryu-no-mi-model-brachiosaurus.jpg",
+    image: "/images/fruits/ryu-ryu-no-mi-model-brachiosaurus.jpg",
     detailedDescription: "Fruit du démon type brachio qui donne pouvoir unique lié à brachio. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "brachio",
@@ -365,7 +365,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Zou Zou no Mi, Model: Mammoth": {
     emoji: "🦣", color: "#78716C", element: "mammoth",
     particles: ["🦣", "❄️", "💥"],
-    image: "/images/fdd/zou-zou-no-mi-model-mammoth.jpg",
+    image: "/images/fruits/zou-zou-no-mi-model-mammoth.jpg",
     detailedDescription: "Fruit du démon type mammoth qui donne pouvoir unique lié à mammoth. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "mammoth",
@@ -374,7 +374,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Neko Neko no Mi, Model: Saber Tiger": {
     emoji: "🐯", color: "#7C2D92", element: "saber tiger",
     particles: ["🐯", "🐾", "⚡"],
-    image: "/images/fdd/neko-neko-no-mi-model-saber-tiger.jpg",
+    image: "/images/fruits/neko-neko-no-mi-model-saber-tiger.jpg",
     detailedDescription: "Fruit du démon type saber tiger qui donne pouvoir unique lié à saber tiger. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "saber tiger",
@@ -383,7 +383,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Ryu Ryu no Mi, Model: Pachycephalosaurus": {
     emoji: "🦖", color: "#F472B6", element: "pachy",
     particles: ["🦖", "💥", "💫"],
-    image: "/images/fdd/ryu-ryu-no-mi-model-pachycephalosaurus.jpg",
+    image: "/images/fruits/ryu-ryu-no-mi-model-pachycephalosaurus.jpg",
     detailedDescription: "Fruit du démon type pachy qui donne pouvoir unique lié à pachy. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "pachy",
@@ -392,7 +392,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Fuku Fuku no Mi": {
     emoji: "👘", color: "#EA580C", element: "garment",
     particles: ["👘", "🍃", "✨"],
-    image: "/images/fdd/fuku-fuku-no-mi.jpg",
+    image: "/images/fruits/fuku-fuku-no-mi.jpg",
     detailedDescription: "Fruit du démon type garment qui donne pouvoir unique lié à garment. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "garment",
@@ -401,7 +401,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Maki Maki no Mi": {
     emoji: "📜", color: "#6B7280", element: "scroll",
     particles: ["📜", "🌀", "✨"],
-    image: "/images/fdd/maki-maki-no-mi.jpg",
+    image: "/images/fruits/maki-maki-no-mi.jpg",
     detailedDescription: "Fruit du démon type scroll qui donne pouvoir unique lié à scroll. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "scroll",
@@ -410,7 +410,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Hebi Hebi no Mi, Model: Yamata no Orochi": {
     emoji: "🐍", color: "#581C87", element: "yamata",
     particles: ["🐍", "🔥", "💀"],
-    image: "/images/fdd/hebi-hebi-no-mi-model-yamata-no-orochi.jpg",
+    image: "/images/fruits/hebi-hebi-no-mi-model-yamata-no-orochi.jpg",
     detailedDescription: "Fruit du démon type yamata qui donne pouvoir unique lié à yamata. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "yamata",
@@ -419,7 +419,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Bari Bari no Mi": {
     emoji: "🛡️", color: "#22C55E", element: "barrier",
     particles: ["🛡️", "✨", "💚"],
-    image: "/images/fdd/bari-bari-no-mi.jpg",
+    image: "/images/fruits/bari-bari-no-mi.jpg",
     detailedDescription: "Fruit du démon type barrier qui donne pouvoir unique lié à barrier. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "barrier",
@@ -428,7 +428,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Bane Bane no Mi": {
     emoji: "🦘", color: "#A3A3A3", element: "spring",
     particles: ["🦘", "💨", "✨"],
-    image: "/images/fdd/bane-bane-no-mi.jpg",
+    image: "/images/fruits/bane-bane-no-mi.jpg",
     detailedDescription: "Fruit du démon type spring qui donne pouvoir unique lié à spring. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "spring",
@@ -437,7 +437,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Giro Giro no Mi": {
     emoji: "👁️", color: "#A78BFA", element: "glare",
     particles: ["👁️", "💜", "✨"],
-    image: "/images/fdd/giro-giro-no-mi.jpg",
+    image: "/images/fruits/giro-giro-no-mi.jpg",
     detailedDescription: "Fruit du démon type glare qui donne pouvoir unique lié à glare. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "glare",
@@ -446,7 +446,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Hobi Hobi no Mi": {
     emoji: "🧸", color: "#F472B6", element: "hobby",
     particles: ["🧸", "💔", "✨"],
-    image: "/images/fdd/hobi-hobi-no-mi.jpg",
+    image: "/images/fruits/hobi-hobi-no-mi.jpg",
     detailedDescription: "Fruit du démon type hobby qui donne pouvoir unique lié à hobby. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "hobby",
@@ -455,7 +455,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Ishi Ishi no Mi": {
     emoji: "🗿", color: "#78716C", element: "stone",
     particles: ["🗿", "💥", "🪨"],
-    image: "/images/fdd/ishi-ishi-no-mi.jpg",
+    image: "/images/fruits/ishi-ishi-no-mi.jpg",
     detailedDescription: "Fruit du démon type stone qui donne pouvoir unique lié à stone. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "stone",
@@ -464,7 +464,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Hira Hira no Mi": {
     emoji: "🚩", color: "#DC2626", element: "ripple",
     particles: ["🚩", "✨", "💫"],
-    image: "/images/fdd/hira-hira-no-mi.jpg",
+    image: "/images/fruits/hira-hira-no-mi.jpg",
     detailedDescription: "Fruit du démon type ripple qui donne pouvoir unique lié à ripple. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "ripple",
@@ -473,7 +473,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Kobu Kobu no Mi": {
     emoji: "📣", color: "#BE185D", element: "encourage",
     particles: ["📣", "🔥", "✨"],
-    image: "/images/fdd/kobu-kobu-no-mi.jpg",
+    image: "/images/fruits/kobu-kobu-no-mi.jpg",
     detailedDescription: "Fruit du démon type encourage qui donne pouvoir unique lié à encourage. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "encourage",
@@ -482,7 +482,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Susu Susu no Mi": {
     emoji: "🦅", color: "#1F2937", element: "soot",
     particles: ["🦅", "🌑", "✨"],
-    image: "/images/fdd/susu-susu-no-mi.jpg",
+    image: "/images/fruits/susu-susu-no-mi.jpg",
     detailedDescription: "Fruit du démon type soot qui donne pouvoir unique lié à soot. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "soot",
@@ -491,7 +491,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Oshi Oshi no Mi": {
     emoji: "👊", color: "#84CC16", element: "push",
     particles: ["👊", "🪨", "✨"],
-    image: "/images/fdd/oshi-oshi-no-mi.jpg",
+    image: "/images/fruits/oshi-oshi-no-mi.jpg",
     detailedDescription: "Fruit du démon type push qui donne pouvoir unique lié à push. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "push",
@@ -500,7 +500,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Ushi Ushi no Mi, Model: Gyuki": {
     emoji: "🕷️", color: "#1F2937", element: "gyuki",
     particles: ["🕷️", "🐂", "💀"],
-    image: "/images/fdd/ushi-ushi-no-mi-model-gyuki.jpg",
+    image: "/images/fruits/ushi-ushi-no-mi-model-gyuki.jpg",
     detailedDescription: "Fruit du démon type gyuki qui donne pouvoir unique lié à gyuki. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "gyuki",
@@ -509,7 +509,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Uta Uta no Mi": {
     emoji: "🎤", color: "#F472B6", element: "song",
     particles: ["🎤", "🎶", "✨", "💖"],
-    image: "/images/fdd/uta-uta-no-mi.jpg",
+    image: "/images/fruits/uta-uta-no-mi.jpg",
     detailedDescription: "Fruit du démon type song qui donne pouvoir unique lié à song. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "song",
@@ -518,7 +518,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Ryu Ryu no Mi, Model: Allosaurus": {
     emoji: "🦖", color: "#DC2626", element: "allo",
     particles: ["🦖", "🔥", "💥"],
-    image: "/images/fdd/ryu-ryu-no-mi-model-allosaurus.jpg",
+    image: "/images/fruits/ryu-ryu-no-mi-model-allosaurus.jpg",
     detailedDescription: "Fruit du démon type allo qui donne pouvoir unique lié à allo. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "allo",
@@ -527,7 +527,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Sube Sube no Mi": {
     emoji: "✨", color: "#F9A8D4", element: "slip",
     particles: ["✨", "💖", "🧴"],
-    image: "/images/fdd/sube-sube-no-mi.jpg",
+    image: "/images/fruits/sube-sube-no-mi.jpg",
     detailedDescription: "Fruit du démon type slip qui donne pouvoir unique lié à slip. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "slip",
@@ -536,7 +536,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Supa Supa no Mi": {
     emoji: "🔪", color: "#A3A3A3", element: "blade",
     particles: ["🔪", "⚔️", "✨"],
-    image: "/images/fdd/supa-supa-no-mi.jpg",
+    image: "/images/fruits/supa-supa-no-mi.jpg",
     detailedDescription: "Fruit du démon type blade qui donne pouvoir unique lié à blade. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "blade",
@@ -545,7 +545,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Mane Mane no Mi": {
     emoji: "🎭", color: "#F472B6", element: "clone",
     particles: ["🎭", "👥", "✨"],
-    image: "/images/fdd/mane-mane-no-mi.jpg",
+    image: "/images/fruits/mane-mane-no-mi.jpg",
     detailedDescription: "Fruit du démon type clone qui donne pouvoir unique lié à clone. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "clone",
@@ -554,7 +554,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Doru Doru no Mi": {
     emoji: "🕯️", color: "#FBBF24", element: "wax",
     particles: ["🕯️", "🔒", "✨"],
-    image: "/images/fdd/doru-doru-no-mi.jpg",
+    image: "/images/fruits/doru-doru-no-mi.jpg",
     detailedDescription: "Fruit du démon type wax qui donne pouvoir unique lié à wax. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "wax",
@@ -563,7 +563,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Doku Doku no Mi": {
     emoji: "☠️", color: "#7C3AED", element: "poison",
     particles: ["☠️", "🐍", "💜"],
-    image: "/images/fdd/doku-doku-no-mi.jpg",
+    image: "/images/fruits/doku-doku-no-mi.jpg",
     detailedDescription: "Fruit du démon type poison qui donne pouvoir unique lié à poison. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "poison",
@@ -572,7 +572,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Suke Suke no Mi": {
     emoji: "👻", color: "#1F2937", element: "clear",
     particles: ["👻", "🫥", "✨"],
-    image: "/images/fdd/suke-suke-no-mi.jpg",
+    image: "/images/fruits/suke-suke-no-mi.jpg",
     detailedDescription: "Fruit du démon type clear qui donne pouvoir unique lié à clear. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "clear",
@@ -581,7 +581,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Fuwa Fuwa no Mi": {
     emoji: "🎈", color: "#EAB308", element: "float",
     particles: ["🎈", "🏝️", "✨"],
-    image: "/images/fdd/fuwa-fuwa-no-mi.jpg",
+    image: "/images/fruits/fuwa-fuwa-no-mi.jpg",
     detailedDescription: "Fruit du démon type float qui donne pouvoir unique lié à float. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "float",
@@ -590,7 +590,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Ori Ori no Mi": {
     emoji: "⛓️", color: "#EC4899", element: "bind",
     particles: ["⛓️", "🔗", "✨"],
-    image: "/images/fdd/ori-ori-no-mi.jpg",
+    image: "/images/fruits/ori-ori-no-mi.jpg",
     detailedDescription: "Fruit du démon type bind qui donne pouvoir unique lié à bind. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "bind",
@@ -599,7 +599,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Kame Kame no Mi": {
     emoji: "🐢", color: "#FDE68A", element: "turtle",
     particles: ["🐢", "🛡️", "✨"],
-    image: "/images/fdd/kame-kame-no-mi.jpg",
+    image: "/images/fruits/kame-kame-no-mi.jpg",
     detailedDescription: "Fruit du démon type turtle qui donne pouvoir unique lié à turtle. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "turtle",
@@ -608,7 +608,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Shiro Shiro no Mi": {
     emoji: "🏰", color: "#1C1917", element: "castle",
     particles: ["🏰", "💂", "✨"],
-    image: "/images/fdd/shiro-shiro-no-mi.jpg",
+    image: "/images/fruits/shiro-shiro-no-mi.jpg",
     detailedDescription: "Fruit du démon type castle qui donne pouvoir unique lié à castle. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "castle",
@@ -617,7 +617,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Wara Wara no Mi": {
     emoji: "🌾", color: "#FBBF24", element: "straw",
     particles: ["🌾", "🪆", "✨"],
-    image: "/images/fdd/wara-wara-no-mi.jpg",
+    image: "/images/fruits/wara-wara-no-mi.jpg",
     detailedDescription: "Fruit du démon type straw qui donne pouvoir unique lié à straw. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "straw",
@@ -626,7 +626,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Oto Oto no Mi": {
     emoji: "🥁", color: "#A3A3A3", element: "sound",
     particles: ["🥁", "🎵", "💥"],
-    image: "/images/fdd/oto-oto-no-mi.jpg",
+    image: "/images/fruits/oto-oto-no-mi.jpg",
     detailedDescription: "Fruit du démon type sound qui donne pouvoir unique lié à sound. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "sound",
@@ -635,7 +635,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Fude Fude no Mi": {
     emoji: "🖌️", color: "#1F2937", element: "brush",
     particles: ["🖌️", "🎨", "✨"],
-    image: "/images/fdd/fude-fude-no-mi.jpg",
+    image: "/images/fruits/fude-fude-no-mi.jpg",
     detailedDescription: "Fruit du démon type brush qui donne pouvoir unique lié à brush. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "brush",
@@ -644,7 +644,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Juku Juku no Mi": {
     emoji: "🍑", color: "#EC4899", element: "ripe",
     particles: ["🍑", "⏳", "✨"],
-    image: "/images/fdd/juku-juku-no-mi.jpg",
+    image: "/images/fruits/juku-juku-no-mi.jpg",
     detailedDescription: "Fruit du démon type ripe qui donne pouvoir unique lié à ripe. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "ripe",
@@ -653,7 +653,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Kira Kira no Mi": {
     emoji: "💎", color: "#A3A3A3", element: "diamond",
     particles: ["💎", "✨", "💠"],
-    image: "/images/fdd/kira-kira-no-mi.jpg",
+    image: "/images/fruits/kira-kira-no-mi.jpg",
     detailedDescription: "Fruit du démon type diamond qui donne pouvoir unique lié à diamond. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "diamond",
@@ -662,7 +662,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Woshu Woshu no Mi": {
     emoji: "👚", color: "#A78BFA", element: "wash",
     particles: ["👚", "🧼", "✨"],
-    image: "/images/fdd/woshu-woshu-no-mi.jpg",
+    image: "/images/fruits/woshu-woshu-no-mi.jpg",
     detailedDescription: "Fruit du démon type wash qui donne pouvoir unique lié à wash. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "wash",
@@ -671,7 +671,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Yuki Yuki no Mi": {
     emoji: "❄️", color: "#E0F2FE", element: "snow",
     particles: ["❄️", "⛄", "✨"],
-    image: "/images/fdd/yuki-yuki-no-mi.jpg",
+    image: "/images/fruits/yuki-yuki-no-mi.jpg",
     detailedDescription: "Fruit du démon type snow qui donne pouvoir unique lié à snow. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "snow",
@@ -680,7 +680,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Gasu Gasu no Mi": {
     emoji: "💨", color: "#A78BFA", element: "gas",
     particles: ["💨", "☠️", "🟣"],
-    image: "/images/fdd/gasu-gasu-no-mi.jpg",
+    image: "/images/fruits/gasu-gasu-no-mi.jpg",
     detailedDescription: "Fruit du démon type gas qui donne pouvoir unique lié à gas. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "gas",
@@ -689,7 +689,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Mira Mira no Mi": {
     emoji: "🪞", color: "#EC4899", element: "mirror",
     particles: ["🪞", "🪞", "✨"],
-    image: "/images/fdd/mira-mira-no-mi.jpg",
+    image: "/images/fruits/mira-mira-no-mi.jpg",
     detailedDescription: "Fruit du démon type mirror qui donne pouvoir unique lié à mirror. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "mirror",
@@ -698,7 +698,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Nui Nui no Mi": {
     emoji: "🧵", color: "#84CC16", element: "stitch",
     particles: ["🧵", "🪡", "✨"],
-    image: "/images/fdd/nui-nui-no-mi.jpg",
+    image: "/images/fruits/nui-nui-no-mi.jpg",
     detailedDescription: "Fruit du démon type stitch qui donne pouvoir unique lié à stitch. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "stitch",
@@ -707,7 +707,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Chiyu Chiyu no Mi": {
     emoji: "💚", color: "#F9A8D4", element: "heal",
     particles: ["💚", "🩹", "✨"],
-    image: "/images/fdd/chiyu-chiyu-no-mi.jpg",
+    image: "/images/fruits/chiyu-chiyu-no-mi.jpg",
     detailedDescription: "Fruit du démon type heal qui donne pouvoir unique lié à heal. Perte de capacité à nager, faiblesse eau de mer et Seastone.",
     firstAppearance: "Grand Line",
     typeDetail: "heal",
@@ -718,7 +718,7 @@ export const fruitVisuals: Record<string, FruitVisual> = {
 export const defaultFruitVisual: FruitVisual = {
   emoji: "🍎", color: "#EC4899", element: "unknown",
   particles: ["✨", "💫", "⭐"],
-  image: "/images/fdd/default.jpg",
+  image: "/images/fruits/default.jpg",
   detailedDescription: "Fruit du démon inconnu, pouvoir mystérieux.",
   firstAppearance: "Inconnu"
 };
