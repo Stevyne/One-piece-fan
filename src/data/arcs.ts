@@ -48,7 +48,7 @@ export const arcs: Arc[] = [
     islands: ['Foosha Village', "Shell's Town", 'Orange Town'],
     keyCharacters: ['Monkey D. Luffy', 'Roronoa Zoro', 'Nami', 'Buggy'],
     bountyMilestone: '30,000,000',
-    image: '/images/luffy.jpg',
+    image: '/images/perso/luffy.jpg',
   },
   {
     id: 'arlong-park',
