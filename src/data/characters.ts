@@ -2137,6 +2137,7 @@ export const characters: Character[] = [
     epithet: "Fleet Admiral Krieg",
     crew: "Krieg Pirates",
     role: "Captain",
+    haki: { observation: false },
   techniques: [
     { name: "Coup puissant", description: "Coup signature.", type: "Other", emoji: "💥" },
   ],
@@ -2383,6 +2384,7 @@ export const characters: Character[] = [
     epithet: "The Heiress",
     crew: "Syrup Village",
     role: "Doctor-to-be",
+    haki: { observation: false },
   techniques: [
     { name: "Coup puissant", description: "Coup signature.", type: "Other", emoji: "💥" },
   ],
@@ -2434,6 +2436,7 @@ export const characters: Character[] = [
     epithet: "Quack Doctor",
     crew: "Drum Island",
     role: "Former Doctor / Father of Chopper",
+    haki: { observation: false },
   techniques: [
     { name: "Coup puissant", description: "Coup signature.", type: "Other", emoji: "💥" },
   ],

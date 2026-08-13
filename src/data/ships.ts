@@ -290,7 +290,7 @@ export const ships: Ship[] = [
   {
     name: "Sleeping White Horse of the Forest",
     crew: "Beautiful Pirates / Straw Hat Grand Fleet",
-    role: "Cavendish's Ship",
+
     type: "White Horse Brigantine",
     image: "/images/sleeping-white-horse.jpg",
     description: "Cavendish's beautiful white horse-themed ship, as narcissistic as its captain. Fast and elegant.",
@@ -387,7 +387,6 @@ export const ships: Ship[] = [
   {
     name: "Kozuki Clan Ship - Kozaburo Legacy",
     crew: "Kozuki Clan / Scabbards",
-    role: "Wano Royal Ship",
     type: "Wano War Junk",
     image: "/images/kozuki-ship.jpg",
     description: "Wano royal ship used by Oden and later Momonosuke, built by Kozaburo (Zoro's ancestor who made Enma and Wado Ichimonji).",
