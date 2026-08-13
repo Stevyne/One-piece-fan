@@ -227,6 +227,42 @@ export default function CharactersPage() {
               <p className="text-white/70 text-sm leading-relaxed">{selectedCharacter.story}</p>
             </div>
 
+            {/* Techniques */}
+            {selectedCharacter.techniques && selectedCharacter.techniques.length > 0 && (
+              <div className="bg-gradient-to-br from-amber-500/10 via-white/5 to-cyan-500/10 rounded-xl p-5 border border-amber-400/20 space-y-3 backdrop-blur-sm">
+                <h2 className="text-lg font-bold text-amber-300 flex items-center gap-2">
+                  ⚔️ Techniques & Capacités
+                  <span className="text-[10px] px-2 py-0.5 rounded-full bg-amber-400/20 text-amber-300 border border-amber-400/30">{selectedCharacter.techniques.length}</span>
+                </h2>
+                <div className="grid gap-3">
+                  {selectedCharacter.techniques.map((tech, idx) => (
+                    <div key={idx} className="group rounded-lg bg-black/30 border border-white/10 p-3 hover:border-amber-400/30 hover:bg-white/5 transition-all">
+                      <div className="flex items-start gap-3">
+                        <span className="text-xl shrink-0 group-hover:scale-110 transition-transform">{tech.emoji || '💥'}</span>
+                        <div className="min-w-0 flex-1">
+                          <div className="flex items-center gap-2 flex-wrap">
+                            <h4 className="font-bold text-white text-sm">{tech.name}</h4>
+                            {tech.type && (
+                              <span className={`text-[9px] px-1.5 py-0.5 rounded-full font-bold border ${
+                                tech.type === 'Devil Fruit' ? 'bg-pink-500/20 text-pink-300 border-pink-500/30' :
+                                tech.type === 'Haki' ? 'bg-amber-500/20 text-amber-300 border-amber-500/30' :
+                                tech.type === 'Sword' ? 'bg-cyan-500/20 text-cyan-300 border-cyan-500/30' :
+                                'bg-white/10 text-white/60 border-white/10'
+                              }`}>
+                                {tech.type}
+                              </span>
+                            )}
+                          </div>
+                          <p className="text-white/60 text-xs mt-1 leading-relaxed">{tech.description}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <p className="text-[10px] text-white/30 italic">💡 Techniques basées sur fruits, Haki et style de combat du personnage</p>
+              </div>
+            )}
+
             <div className="bg-white/5 rounded-xl p-5 border border-white/10 backdrop-blur-sm">
               <h2 className="text-lg font-bold text-white/80 mb-2">📝 Résumé</h2>
               <p className="text-white/60 text-sm leading-relaxed">{selectedCharacter.description}</p>

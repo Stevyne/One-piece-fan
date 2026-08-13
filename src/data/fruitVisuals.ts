@@ -183,6 +183,16 @@ export const fruitVisuals: Record<string, FruitVisual> = {
   "Shiro Shiro no Mi": { emoji: "🏰", color: "#1C1917", element: "castle", particles: ["🏰", "💂", "✨"] },
   "Wara Wara no Mi": { emoji: "🌾", color: "#FBBF24", element: "straw", particles: ["🌾", "🪆", "✨"] },
   "Oto Oto no Mi": { emoji: "🥁", color: "#A3A3A3", element: "sound", particles: ["🥁", "🎵", "💥"] },
+  // Batch 6 v1.4 - 180 chars + techniques
+  "Fude Fude no Mi": { emoji: "🖌️", color: "#1F2937", element: "brush", particles: ["🖌️", "🎨", "✨"] },
+  "Juku Juku no Mi": { emoji: "🍑", color: "#EC4899", element: "ripe", particles: ["🍑", "⏳", "✨"] },
+  "Kira Kira no Mi": { emoji: "💎", color: "#A3A3A3", element: "diamond", particles: ["💎", "✨", "💠"] },
+  "Woshu Woshu no Mi": { emoji: "👚", color: "#A78BFA", element: "wash", particles: ["👚", "🧼", "✨"] },
+  "Yuki Yuki no Mi": { emoji: "❄️", color: "#E0F2FE", element: "snow", particles: ["❄️", "⛄", "✨"] },
+  "Gasu Gasu no Mi": { emoji: "💨", color: "#A78BFA", element: "gas", particles: ["💨", "☠️", "🟣"] },
+  "Mira Mira no Mi": { emoji: "🪞", color: "#EC4899", element: "mirror", particles: ["🪞", "🪞", "✨"] },
+  "Nui Nui no Mi": { emoji: "🧵", color: "#84CC16", element: "stitch", particles: ["🧵", "🪡", "✨"] },
+  "Chiyu Chiyu no Mi": { emoji: "💚", color: "#F9A8D4", element: "heal", particles: ["💚", "🩹", "✨"] },
 };
 
 export const defaultFruitVisual: FruitVisual = {
