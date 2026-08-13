@@ -18,7 +18,7 @@ export interface Character {
     conqueror?: boolean;
     conquerorAdvanced?: boolean;
   };
-  techniques?: { name: string; description: string; type: string; emoji: string }[];
+  techniques?: Array<{ name: string; description: string; type: string; emoji: string }>;
   description: string;
   story: string;
   color: string;
@@ -2137,7 +2137,7 @@ export const characters: Character[] = [
     epithet: "Fleet Admiral Krieg",
     crew: "Krieg Pirates",
     role: "Captain",
-    haki: { observation: false},
+    haki: { observation: false },
   techniques: [
     { name: "Coup puissant", description: "Coup signature.", type: "Other", emoji: "💥" },
   ],
@@ -3486,5 +3486,374 @@ export const characters: Character[] = [
     story: "Géant ancien gardien Enies Lobby? Non esclave Sabaody avec Silvers Rayleigh sauve. Il est charpentier géant qui arrache arbre. Après rejoint Elbaf.",
     color: "#78716C",
     image: "/images/perso/stansen.jpg"
+  },
+  // ===== BATCH 7 - 25 MORE v1.5 - 204 TOTAL + FRUITS IMAGES + SHIPS =====
+  {
+    name: "Atlas",
+    epithet: "Violence - Vegapunk Sat 05",
+    crew: "Egghead / Vegapunk Satellites",
+    role: "Satellite - Violence",
+    haki: { observation: true },
+    techniques: [
+      { name: "Light Gloves Punch", description: "Gants lumière qui deviennent géants et frappent.", type: "Other", emoji: "🥊" },
+      { name: "Self Destruction?", description: "Peut se reconstruire après explosion.", type: "Cyborg", emoji: "💥" },
+    ],
+    description: "Satellite Vegapunk Violence, petite fille forte.",
+    story: "Satellite 05 Violence, enfant avec gants lumière. Elle se fait exploser par York et se reconstruit. Très forte, mange beaucoup.",
+    color: "#F472B6",
+    image: "/images/perso/atlas.jpg"
+  },
+  {
+    name: "Edison",
+    epithet: "Thinking - Vegapunk Sat 03",
+    crew: "Egghead / Vegapunk Satellites",
+    role: "Satellite - Thinking",
+    haki: { observation: true },
+    techniques: [
+      { name: "Invention Rush", description: "Pense à 10 inventions par seconde.", type: "Other", emoji: "💡" },
+    ],
+    description: "Satellite Thinking, petit enfant inventeur.",
+    story: "Sat 03 Thinking, petit enfant avec grosse tête qui pense. Il invente vite. Il est tué par York?",
+    color: "#A3A3A3",
+    image: "/images/perso/edison.jpg"
+  },
+  {
+    name: "Pythagoras",
+    epithet: "Wisdom - Vegapunk Sat 04",
+    crew: "Egghead / Vegapunk Satellites",
+    role: "Satellite - Wisdom",
+    haki: { observation: true },
+    techniques: [
+      { name: "Data Analysis", description: "Analyse tout avec sagesse.", type: "Other", emoji: "📊" },
+    ],
+    description: "Satellite Wisdom, tête détachable.",
+    story: "Sat 04 Wisdom, tête peut se détacher et voler. Très sage, enregistre tout. Il est détruit par S-Snake?",
+    color: "#6B7280",
+    image: "/images/perso/pythagoras.jpg"
+  },
+  {
+    name: "York",
+    epithet: "Greed - Vegapunk Sat 06",
+    crew: "Egghead / Vegapunk Satellites / World Government Traitor",
+    role: "Satellite - Greed",
+    haki: { observation: true },
+    techniques: [
+      { name: "Greed Betrayal", description: "Trahit tous pour devenir Dragon Céleste.", type: "Other", emoji: "💰" },
+    ],
+    description: "Satellite Greed qui trahit pour devenir Tenryubito.",
+    story: "Sat 06 Greed mange, dort, va toilettes - représente besoins humains. Elle trahit Vegapunk pour devenir Dragon Céleste en appelant Gorosei à Egghead.",
+    color: "#FBBF24",
+    image: "/images/perso/york.jpg"
+  },
+  {
+    name: "Lilith",
+    epithet: "Evil - Vegapunk Sat 02",
+    crew: "Egghead / Vegapunk Satellites",
+    role: "Satellite - Evil",
+    haki: { observation: true },
+    techniques: [
+      { name: "EVIL Beam", description: "Pistolet à bulles de mer qui neutralise fruits.", type: "Other", emoji: "🫧" },
+    ],
+    description: "Satellite Evil, méchante mais gentille au fond.",
+    story: "Sat 02 Evil, jeune fille avec pistolet bulles mer Sea Prism Stone qui annule fruits. Elle est en fait bonne et aide Robin.",
+    color: "#000000",
+    image: "/images/perso/lilith.jpg"
+  },
+  {
+    name: "Shaka",
+    epithet: "Good - Vegapunk Sat 01",
+    crew: "Egghead / Vegapunk Satellites",
+    role: "Satellite - Good",
+    haki: { observation: true },
+    techniques: [
+      { name: "Good Reasoning", description: "Raisonne avec bonté, logique pure.", type: "Other", emoji: "😇" },
+    ],
+    description: "Satellite Good, casque good raison.",
+    story: "Sat 01 Good, porte casque, représente bonté Vegapunk. Il est abattu par York au début Egghead.",
+    color: "#F8FAFC",
+    image: "/images/perso/shaka.jpg"
+  },
+  {
+    name: "Carue",
+    epithet: "The Running Duck",
+    crew: "Alabasta Kingdom / Straw Hat Allies",
+    role: "Animal Companion - Vivi",
+    haki: { observation: true },
+    techniques: [
+      { name: "Super Spot-Billed Duck Speed", description: "Court plus vite que léopard du désert.", type: "Other", emoji: "🦆" },
+    ],
+    description: "Canard de Vivi qui court vite.",
+    story: "Canard super rapide de Vivi, animal de compagnie qui porte Vivi et aide Straw Hats à fuir Sandora. Très loyal, a survécu explosion.",
+    color: "#FBBF24",
+    image: "/images/perso/carue.jpg"
+  },
+  {
+    name: "Pell",
+    epithet: "The Falcon",
+    crew: "Alabasta Kingdom",
+    role: "Guardian God - 2nd",
+    devilFruit: { name: "Tori Tori no Mi, Model: Falcon", type: "Zoan", description: "Bird-Bird Fruit Falcon - Turns into falcon, flies." },
+    haki: { observation: true, armament: true },
+    techniques: [
+      { name: "Falcon Bomb", description: "Porte bombe dans ciel et survit explosion.", type: "Devil Fruit", emoji: "🦅" },
+    ],
+    description: "Faucon garde Alabasta, a survécu bombe qui rase ville.",
+    story: "Garde d'Alabasta faucon, 1 des 2 dieux gardiens avec Chaka. Il porte bombe de Crocodile au ciel et survit explosion qui devait raser Alubarna. Très loyal Vivi.",
+    color: "#A3A3A3",
+    image: "/images/perso/pell.jpg"
+  },
+  {
+    name: "Chaka",
+    epithet: "The Jackal",
+    crew: "Alabasta Kingdom",
+    role: "Guardian God - 1st",
+    devilFruit: { name: "Inu Inu no Mi, Model: Jackal", type: "Zoan", description: "Dog-Dog Fruit Jackal - Turns into jackal." },
+    haki: { observation: true, armament: true },
+    techniques: [
+      { name: "Jackal Claw", description: "Griffe chacal rapide.", type: "Devil Fruit", emoji: "🐕" },
+    ],
+    description: "Chacal garde Alabasta.",
+    story: "Garde d'Alabasta chacal, 2e dieu gardien. Combat Crocodile et perd. Ami Vivi depuis enfant.",
+    color: "#92400E",
+    image: "/images/perso/chaka.jpg"
+  },
+  {
+    name: "Igaram",
+    epithet: "Mr. 8 - Igarappoi",
+    crew: "Alabasta Kingdom / Former Baroque Works",
+    role: "Captain of Royal Guard",
+    haki: { observation: true },
+    techniques: [
+      { name: "Igarappoi - Saxophone Shot", description: "Saxo qui tire.", type: "Gun", emoji: "🎷" },
+    ],
+    description: "Garde royal Vivi avec coiffure afro et saxo fusil.",
+    story: "Capitaine garde Vivi, Mr 8 de Baroque Works infiltré. Il se fait exploser par Nico Robin pour sauver Vivi, survit. Fidèle.",
+    color: "#1F2937",
+    image: "/images/perso/igaram.jpg"
+  },
+  {
+    name: "Wapol",
+    epithet: "Tin Plate",
+    crew: "Former Drum Kingdom / Wapol Conglomerate",
+    role: "King / Toy Mogul",
+    bounty: "0",
+    devilFruit: { name: "Baku Baku no Mi", type: "Paramecia", description: "Munch-Munch Fruit - Eats anything, transforms body." },
+    haki: { observation: true },
+    techniques: [
+      { name: "Baku Baku Factory", description: "Mange et recrée jouets, son corps usine.", type: "Devil Fruit", emoji: "🏭" },
+      { name: "Wapometal", description: "Alliage Wapometal mémoire forme super dur.", type: "Devil Fruit", emoji: "🔩" },
+    ],
+    description: "Ex roi Drum égoïste qui mange tout.",
+    story: "Roi Drum égoïste chassé par Luffy. Son Baku Baku mange tout et recrée. Devenu riche avec Wapometal jouets, aide Vivi à fuir Reverie avec Morgans. A changé?",
+    color: "#F472B6",
+    image: "/images/perso/wapol.jpg"
+  },
+  {
+    name: "Dalton",
+    epithet: "The Tough Guy",
+    crew: "Sakura Kingdom (Former Drum)",
+    role: "New King / Former Guard",
+    devilFruit: { name: "Ushi Ushi no Mi, Model: Bison", type: "Zoan", description: "Ox-Ox Fruit Bison - Turns into bison, strong." },
+    haki: { observation: true, armament: true },
+    techniques: [
+      { name: "Bison Rush", description: "Charge bison puissante.", type: "Devil Fruit", emoji: "🦬" },
+    ],
+    description: "Ex garde Wapol devenu roi gentil Sakura.",
+    story: "Ex capitaine garde Wapol qui a défendu Drum contre Wapol cruauté. Devient roi Sakura après Luffy, ami Chopper et Kureha. Son bison est fort.",
+    color: "#78350F",
+    image: "/images/perso/dalton.jpg"
+  },
+  {
+    name: "Kuroobi",
+    epithet: "Black Belt",
+    crew: "Former Arlong Pirates / Former Sun Pirates",
+    role: "Officer",
+    haki: { observation: true, armament: true },
+    techniques: [
+      { name: "Fish-Man Karate: 1000 Brick Fist", description: "Karate homme-poisson 1000 briques.", type: "Fish-Man Karate", emoji: "🥋" },
+      { name: "Black Belt Binding", "description": "Ceinture noire qui lie.", "type": "Martial Arts", "emoji": "🥋" },
+    ],
+    description: "Homme-poisson ceinture noire karaté, rival Sanji Arlong Park.",
+    story: "Officier Arlong, maître karaté homme-poisson. Battu par Sanji à Arlong Park avec Diable Jambe debut. Ancien Sun Pirates.",
+    color: "#0E7490",
+    image: "/images/perso/kuroobi.jpg"
+  },
+  {
+    name: "Hatchan",
+    epithet: "Hachi - Six-Sword Octopus",
+    crew: "Former Arlong Pirates / Takoyaki Stand",
+    role: "Octopus Fish-Man / Cook",
+    haki: { observation: true },
+    techniques: [
+      { name: "Rokutoryu - Six Sword Style", description: "6 sabres avec 6 bras pieuvre.", "type": "Sword", "emoji": "🐙" },
+      { name: "Takoyaki Punch", "description": "Coup takoyaki.", "type": "Other", "emoji": "🐙" },
+    ],
+    description: "Pieuvre 6 sabres ami Camie, ancien Arlong.",
+    story: "Hachi octopus 6 sabres, ami de Rayleigh? Ancien Arlong Pirates. Après Arlong battu, il ouvre takoyaki avec Camie et Pappag. Sauve Luffy à Sabaody, se fait tirer par Charlos Tenryubito, déclenche Luffy qui frappe Tenryubito.",
+    color: "#F472B6",
+    image: "/images/perso/hatchan.jpg"
+  },
+  {
+    name: "Sadi",
+    epithet: "Sadi-chan",
+    crew: "Impel Down",
+    role: "Chief Guard - Warden's Torturer",
+    haki: { observation: true, armament: true },
+    techniques: [
+      { name: "Trident Torture", "description": "Trident et fouet sadique.", "type": "Other", "emoji": "🔱" },
+      { name: "Jail Beast Command", "description": "Commande bêtes gardiennes enfer.", "type": "Other", "emoji": "👹" },
+    ],
+    description: "Dominatrice Impel Down avec trident.",
+    story: "Chef gardienne Impel Down sadique avec trident et animaux Minotaurus etc. Elle aime torturer prisonniers. Amie Domino.",
+    color: "#EC4899",
+    image: "/images/perso/sadi.jpg"
+  },
+  {
+    name: "Saldeath",
+    epithet: "Blue Gorilla Commander",
+    crew: "Impel Down",
+    role: "Commander - Blugori",
+    haki: { observation: true },
+    techniques: [
+      { name: "Blugori Army", "description": "Commande armée gorilles bleus à hache.", "type": "Other", "emoji": "🦍" },
+    ],
+    description: "Commandant Blugori gorilles bleus Impel Down.",
+    story: "Commandant Blue Gorilla à Impel Down avec fourche. Il commande Blugori qui attaquent Luffy. Petit mais autoritaire.",
+    color: "#1E40AF",
+    image: "/images/perso/saldeath.jpg"
+  },
+  {
+    name: "Holdem",
+    epithet: "Lion's Mouth",
+    crew: "Beast Pirates",
+    role: "Headliner",
+    devilFruit: { name: "Neko Neko no Mi, Model: Lion (SMILE)", type: "Zoan", description: "SMILE Lion - Lion head on belly, fire." },
+    haki: { observation: true, armament: true },
+    techniques: [
+      { name: "Lion Fire - Karakuri", "description": "Tête lion ventre crache feu.", "type": "Devil Fruit", "emoji": "🦁" },
+    ],
+    description: "Headliner lion ventre qui tient Tama otage.",
+    story: "Headliner Wano qui tient Tama otage et vole. Battu par Luffy qui le one-shot Gomu Gomu no Red Hawk? Non.",
+    color: "#D97706",
+    image: "/images/perso/holdem.jpg"
+  },
+  {
+    name: "Speed",
+    epithet: "The Horse Girl",
+    crew: "Beast Pirates / Tama's Army (Former)",
+    role: "Headliner",
+    devilFruit: { name: "Uma Uma no Mi, Model: Horse (SMILE)", type: "Zoan", description: "SMILE Horse - Centaur horse." },
+    haki: { observation: true },
+    techniques: [
+      { name: "Horse Speed", "description": "Vitesse cheval centaure.", "type": "Devil Fruit", "emoji": "🐴" },
+    ],
+    description: "Centaure cheval qui sert Tama après dango Kibi Kibi.",
+    story: "Headliner cheval SMILE, très rapide. Tama la dompte avec Kibi Kibi dango, elle devient alliée et transporte Luffy Wano. Très loyal après dango.",
+    color: "#FDE68A",
+    image: "/images/perso/speed.jpg"
+  },
+  {
+    name: "Dobon",
+    epithet: "The Hippo",
+    crew: "Beast Pirates",
+    role: "Headliner",
+    devilFruit: { name: "Kaba Kaba no Mi, Model: Hippo (SMILE)", type: "Zoan", description: "SMILE Hippo - Hippo mouth on belly." },
+    haki: { observation: true },
+    techniques: [
+      { name: "Hippo Crush", "description": "Mâchoire hippo ventre écrase.", "type": "Devil Fruit", "emoji": "🦛" },
+    ],
+    description: "Hippo ventre Headliner prison Udon.",
+    story: "Headliner Udon prison qui garde Luffy et Kid. Son hippo ventre mord. Battu par Luffy.",
+    color: "#78716C",
+    image: "/images/perso/dobon.jpg"
+  },
+  {
+    name: "Charlotte Opera",
+    epithet: "Cream Man",
+    crew: "Big Mom Pirates",
+    role: "5th Son / Minister of Whipped Cream",
+    devilFruit: { name: "Kuri Kuri no Mi", type: "Paramecia", description: "Cream-Cream Fruit - Controls whipped cream." },
+    haki: { observation: true, armament: true },
+    techniques: [
+      { name: "Cream Puff", "description": "Crème qui brûle comme feu.", "type": "Devil Fruit", "emoji": "🍰" },
+    ],
+    description: "Fils Big Mom crème fouettée qui brûle.",
+    story: "5e fils ministre crème qui brûle comme feu. Gardien Mirror World. Battu par Jinbe qui le noie crème? Il survit? Oui.",
+    color: "#FDE68A",
+    image: "/images/perso/opera.jpg"
+  },
+  {
+    name: "Charlotte Galette",
+    epithet: "Butter Girl",
+    crew: "Big Mom Pirates",
+    role: "18th Daughter / Minister of Butter",
+    devilFruit: { name: "Bata Bata no Mi", type: "Paramecia", description: "Butter-Butter Fruit - Controls butter." },
+    haki: { observation: true },
+    techniques: [
+      { name: "Butter Bind", "description": "Beurre qui colle et bloque mouvements.", "type": "Devil Fruit", "emoji": "🧈" },
+    ],
+    description: "Fille Big Mom beurre qui colle.",
+    story: "18e fille ministre beurre qui colle Nami? Son Bata Bata colle comme glue. Battue par? Non mais repoussée.",
+    color: "#FBBF24",
+    image: "/images/perso/galette.jpg"
+  },
+  {
+    name: "Gin",
+    epithet: "The Demon Man",
+    crew: "Krieg Pirates",
+    role: "Fighting Captain",
+    haki: { observation: true, armament: true },
+    techniques: [
+      { name: "Man-Demon Twin Tonfa", description: "Tonfa avec boules fer qui tournent.", type: "Other", emoji: "🔱" },
+      { name: "Loyalty to Krieg", description: "Se sacrifie pour Krieg malgré cruauté.", type: "Other", emoji: "😭" },
+    ],
+    description: "Bras droit Krieg qui a été nourri par Sanji.",
+    story: "Bras droit Krieg très fort, a faim Baratie, Sanji nourrit malgré ennemi. Il respecte Sanji mais reste loyal Krieg. Luffy le bat? Non Sanji? Il survit et part.",
+    color: "#6B7280",
+    image: "/images/perso/gin.jpg"
+  },
+  {
+    name: "Pearl",
+    epithet: "The Iron Wall",
+    crew: "Krieg Pirates",
+    role: "Second Fighting Captain",
+    haki: { observation: true },
+    techniques: [
+      { name: "Iron Wall Pearl Shield", description: "Boucliers perles qui protègent tout corps en feu.", type: "Other", emoji: "🛡️" },
+      { name: "Fire Crouch", description: "Boule feu avec boucliers perles qui brûlent.", type: "Other", emoji: "🔥" },
+    ],
+    description: "Gros avec boucliers perles feu, peur du sang.",
+    story: "2e combat Krieg Pirates avec boucliers perles qui brûlent. Très peur sang, quand voit sang devient fou et fort. Battu par Sanji & Luffy? Sanji.",
+    color: "#FBBF24",
+    image: "/images/perso/pearl.jpg"
+  },
+  {
+    name: "Jango",
+    epithet: "The Hypnotist",
+    crew: "Former Black Cat Pirates / Marines (Former)",
+    role: "Former Captain / Marine",
+    haki: { observation: true },
+    techniques: [
+      { name: "1-2 Jango - Hypnosis", description: "Hypnotise avec pendule 1-2 Jango, endort.", type: "Other", emoji: "🌀" },
+    ],
+    description: "Hypnotiseur qui endort avec 1-2 Jango.",
+    story: "Capitaine après Kuro, hypnotiseur qui a hypnotisé Kaya? Non. Il rejoint Marines après Kuro battu avec Fullbody. Très comique avec danse.",
+    color: "#1F2937",
+    image: "/images/perso/jango.jpg"
+  },
+  {
+    name: "Fullbody",
+    epithet: "Iron Fist Fullbody",
+    crew: "Marines",
+    role: "Lieutenant (Former) / Chef",
+    haki: { observation: true },
+    techniques: [
+      { name: "Iron Fist - Fullbody", description: "Poing fer qui casse.", type: "Martial Arts", emoji: "👊" },
+      { name: "Chef Cooking - Romantic", description: "Cuisine romantique avec Sanji.", type: "Cooking", emoji: "🍳" },
+    ],
+    description: "Marine poing fer devenu chef avec Sanji.",
+    story: "Lieutenant Marine Baratie qui se bat Sanji et perd. Après devient chef doubleur avec Sanji à Baratie? Non devient ami Jango Marine. Il aime cuisine.",
+    color: "#F59E0B",
+    image: "/images/perso/fullbody.jpg"
   },
 ];
